@@ -71,5 +71,5 @@ def writeTweetsToJson(screen_name):
 if __name__ == '__main__':
     #Skriv vilket användarnamn du vill ladda ner tweets från (stora och små bokstäver viktigt)
     while True:
-        writeTweetsToJson"@socialdemokrat")
+        writeTweetsToJson("@socialdemokrat")
         writeTweetsToJson("@RealDonaldTrump")
