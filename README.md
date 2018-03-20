@@ -1,3 +1,4 @@
+
 #Politweet
 ======
 ##How to install Python2 and the Tweepy library
@@ -12,7 +13,7 @@
 ###Mac
 1. Install [Python2.7](https://www.python.org/downloads/release/python-2714/) by downloading the installer.
 2. During the install process make sure you tick the option to get "PIP" as well.
-3. 3. Once python2 with pip is installed open your terminal and type
+3. Once python2 with pip is installed open your terminal and type
 ```sudo pip install tweepy```
 Enter your computers password and press enter (PW won't visually show in your terminal window but it's there)
 ======
