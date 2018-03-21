@@ -1,11 +1,11 @@
 # Politweet #
-#### How to use and install and the Tweepy library using Python2 <br> 
-
+### How to use and install and the Tweepy library using Python2 <br> 
 <strong>The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue! <br> Enjoy the Politweet!</strong>
+<br>
 
 ### Windows ###
 -------------
-1. Download and tnstall [Python2.7](https://www.python.org/downloads/release/python-2714/).
+1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/).
 2. During the install process make sure you tick the option to get "PIP" as well.
 3. Once python2 with pip is installed, open the cmd and type ```pip install tweepy```.
 
@@ -19,13 +19,13 @@
 
 ### Linux ###
 -------------
-<br>Python2.7 comes preinstalled on most Linux distros, if you have removed the python package you can get it by following these steps:
+Python2.7 comes preinstalled on most Linux distros, if you have removed the python package you can get it by following these steps:
 1. Open your terminal
 2. Download/install Python2 with ```sudo apt-get install python```
 2. Download/install PIP through ```apt-get install python-pip```
 3. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
 
-### How to use Politweet ### 
+### How to use Politweet ###
 -------------
 <strong>Politweet is currently in the early stage of development. With our current build, you may download and store selected tweets through your cmd/terminal.</strong>
 1. Clone/download all files in the Politweet repository.
