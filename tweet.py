@@ -70,5 +70,15 @@ def writeTweetsToJson(screen_name):
 if __name__ == '__main__':
     #Write what twitter profiles tweets you want to download (CASE SENSITIVE), if you enter a name of a profile you already have the old file will be overwritten.
     while True:
-        writeTweetsToJson("@socialdemokrat")
-        writeTweetsToJson("@RealDonaldTrump")
+        writeTweetsToJson("@jimmieakesson")
+        writeTweetsToJson("@SwedishPM")
+        writeTweetsToJson("@IsabellaLovin")
+        writeTweetsToJson("@annieloof")
+        writeTweetsToJson("@carlbildt")
+        writeTweetsToJson("@jsjostedt")
+        writeTweetsToJson("@bjorklundjan")
+        writeTweetsToJson("@BuschEbba")
+        print("_"*40)
+        print("Done!")
+        print("_"*40)
+        sleep(10)
