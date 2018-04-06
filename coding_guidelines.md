@@ -20,6 +20,7 @@
 #### Allmänna regler
 
 * En indentering är en tab.
+* En tab-size är 2 spaces.
 * Alla kodfiler med JavaScript skall ha filändelsen `.js`.
 * Vid komparation använd **alltid** `===` - **aldrig** `==`.
 
@@ -154,7 +155,7 @@ const obj {
 
 ```javascript
 // Rätt
-/** 
+/**
 Såhär
 skriver man
 kommentarer på flera
@@ -187,4 +188,3 @@ const iLoveHummus = true; // Do I love hummus?
 
 
 ### React
-
