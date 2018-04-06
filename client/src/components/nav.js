@@ -1,3 +1,3 @@
 import React, { Component } from 'react';
 
-export default nav;
+export default Nav;
