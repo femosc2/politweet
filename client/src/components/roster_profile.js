@@ -16,7 +16,7 @@ class RosterProfile extends Component {
 
 
     return (
-      <div className="grid-item" id={id}><img src={img} alt={alt}></img></div>
+    <div className="col s1"><img src={img} alt={alt} id={id}></img></div>
     );
   }
 }

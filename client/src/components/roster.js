@@ -9,7 +9,7 @@ class Roster extends Component {
   render() {
 
     return (
-            <div className="grid-container">
+            <div className="container">
               <div className="row">
                 <RosterProfile img="style/images/annielööf.jpg" id="fighter1" alt="Annie Lööf" />
                 <RosterProfile img="style/images/stefam.jpg" id="fighter2" alt="Stefan Löfven" />

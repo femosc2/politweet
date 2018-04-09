@@ -1,6 +1,10 @@
-#container {
+.container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
+  animation: slideInLeft 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+
 }
 
 
@@ -12,19 +16,9 @@ h2 {
   animation: fadein 1s;
 }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #070707;
-  font-size: 30px;
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  animation: fadein 1s;
-  cursor: pointer;
-}
-
 #fighter1 {
   background-color: pink;
+  width: 200px;
 }
 
 #fighter2 {
@@ -64,8 +58,8 @@ h2 {
   background-color: orange;
 }
 
-.grid-item:active,
-.grid-item:hover {
+.col.s1:active,
+.col.s1:hover {
   animation: flashing 5s infinite;
   animation-fill-mode: forwards;
 }
@@ -181,4 +175,35 @@ img {
   overflow: hidden;
   margin: 0 auto;
   padding: 0px;
+}
+
+
+________________
+
+.col.s1 {
+  padding: 0px;
+  animation: slideInBottom 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  cursor: pointer;
+  width: 200px;
+}
+.col.s1 img {
+  height: 200px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+
+.row  {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.row .col.s1  {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
 }
