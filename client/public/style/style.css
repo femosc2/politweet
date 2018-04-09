@@ -1,8 +1,14 @@
+body {
+  background-color: #070707;
+  background-image: url("rosenbad.jpg")
+}
+
+
 .container {
   margin: 0 auto;
   padding: 0px;
   width: 80%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.5);
   animation: slideInLeft 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
@@ -218,16 +224,7 @@ ________________
   height: 150px;
   width: 150px;
   cursor: pointer;
-  margin: 0 auto;
   border-radius: 50%;
-}
-
-.statContainerRight {
-  float: right;
-}
-
-.statContainerLeft {
-  float: left;
 }
 
 .row  {
@@ -238,4 +235,13 @@ ________________
 .row .col.s1  {
   margin: 0 auto;
   width: 250px;
+}
+
+
+.statContainerRight {
+  float: right;
+}
+
+.statContainerLeft {
+  float: left;
 }
