@@ -1,21 +1,20 @@
-// import _ from "lodash";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Roster from "./components/roster";
+import Footer from "./components/footer"
 import RosterProfile from "./components/roster_profile";
-import Nav from "./components/nav";
 
 class App extends Component {
   render() {
       return (
         <div>
           <Header />
-          <Nav />
           <Roster />
+          <Footer />
         </div>
     );
   }
 };
 
-ReactDOM.render(<App />, document.querySelector(".container"));
+ReactDOM.render(<App />, document.querySelector(".wrapper"));

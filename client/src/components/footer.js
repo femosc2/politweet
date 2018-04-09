@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Footer extends Component {
     render() {
         return (
-          <div className="header">
+          <div className="footer">
               <div>Politweet</div>
               <div>Call me dr Jonas</div>
           </div>
@@ -11,4 +11,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Footer;
