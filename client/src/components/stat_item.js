@@ -18,18 +18,18 @@ const StatItem = (props) => {
   const wordCount = statItem.wordCount;
 
   return(
-    <li>
-      <div>{image}</div>
-      <div>{name}</div>
-      <div>{description}</div>
-      <div>{followers}</div>
-      <div>{friends}</div>
-      <div>{quotes}</div>
-      <div>{mentions}</div>
-      <div>{party}</div>
-      <div>{age}</div>
-      <div>{accCreation}</div>
-      <div>{wordCount}</div>
+    <li id="statList">
+      <div className="statItem">{image}</div>
+      <div className="statItem">{name}</div>
+      <div className="statItem">{description}</div>
+      <div className="statItem">{followers}</div>
+      <div className="statItem">{friends}</div>
+      <div className="statItem">{quotes}</div>
+      <div className="statItem">{mentions}</div>
+      <div className="statItem">{party}</div>
+      <div className="statItem">{age}</div>
+      <div className="statItem">{accCreation}</div>
+      <div className="statItem">{wordCount}</div>
     </li>
   );
 

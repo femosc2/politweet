@@ -11,8 +11,8 @@ class StatContainer extends Component {
 
   render() {
     return (
-      <div>
-        <ul>
+      <div className="theStatListContainer">
+        <ul className="theStatListContainer">
           <StatItem />
         </ul>
       </div>

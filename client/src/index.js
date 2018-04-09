@@ -13,14 +13,14 @@ class App extends Component {
     this.state = {
       selectedFighter: null
     };
-    
+
   }
   render() {
       return (
         <div>
+          <Roster />
           <Header />
           <Navbar />
-          <Roster />
           <StatContainer />
           <Footer />
         </div>

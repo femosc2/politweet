@@ -8,6 +8,11 @@ class Roster extends Component {
   }
 
 
+  handleClick = () => {
+    const selectedId = this.props.id;
+    console.log("KLICKAD", this.props.id);
+    return selectedId;
+  };
 
   render() {
 
