@@ -7,10 +7,11 @@ class RosterProfile extends Component {
   render() {
     let img = this.props.img
     let id = this.props.id
+    let alt = this.props.alt
 
 
     return (
-      <div className="grid-item" id={id}><img src={img}></img></div>
+      <div className="grid-item" id={id}><img src={img} alt={alt}></img></div>
     );
   }
 }
