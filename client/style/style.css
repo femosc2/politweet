@@ -75,10 +75,16 @@ h2 {
   grid-template-columns: auto auto auto;
   background-color: #e3e3e3;
   padding: 10px;
-  animation: fadein 1s;
+  -webkit-animation: slideInLeft 1s 1;
+  animation: slideInLeft 1s 1;
+  animation-fill-mode: forwards;
   position: absolute;
   margin: 0 auto;
   width: 50%;
+}
+
+.header {
+  animation: slideinTop
 }
 
 @keyframes fadein {
@@ -112,6 +118,54 @@ h2 {
     background-color: yellow;
   }
 }
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
 
 img {
   width: 200px;
