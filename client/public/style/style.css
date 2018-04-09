@@ -84,6 +84,26 @@ h2 {
   text-align: center;
 }
 
+.nav {
+
+}
+
+.modal-content {
+  background-color: darkgrey;
+}
+
+.modal-footer {
+  background-color: yellow !important;
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.kuken {
+  width: 100%;
+}
+
 .footer {
   animation: slideInBottom 1s 1;
   animation-fill-mode: forwards;
