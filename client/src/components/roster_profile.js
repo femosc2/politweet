@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+
+
+/* This shows a single profile over a user */
+
+
 class RosterProfile extends Component {
   constructor(props) {
     super(props);
