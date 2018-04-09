@@ -16,17 +16,17 @@ const StatItem = () => {
   wordCount: "placeholder WORDCOUNT"
 };
 
-const image = statItem.image;
-const name = statItem.name;
-const description = statItem.description;
-const followers = statItem.followers;
-const friends = statItem.friends;
-const quotes = statItem.quotes;
-const mentions = statItem.mentions;
-const party = statItem.party;
-const age = statItem.age;
-const accCreation = statItem.accCreation;
-const wordCount = statItem.wordCount;
+  const image = statItem.image;
+  const name = statItem.name;
+  const description = statItem.description;
+  const followers = statItem.followers;
+  const friends = statItem.friends;
+  const quotes = statItem.quotes;
+  const mentions = statItem.mentions;
+  const party = statItem.party;
+  const age = statItem.age;
+  const accCreation = statItem.accCreation;
+  const wordCount = statItem.wordCount;
 
   return(
     <li>
