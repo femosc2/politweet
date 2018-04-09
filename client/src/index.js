@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Roster from "./components/roster";
 import Navbar from "./components/nav";
 import Footer from "./components/footer"
-import RosterProfile from "./components/roster_profile";
+import StatContainer from "./components/stat_container";
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
           <Header />
           <Navbar />
           <Roster />
+          <StatContainer />
           <Footer />
         </div>
     );

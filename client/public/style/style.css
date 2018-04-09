@@ -1,9 +1,20 @@
+body {
+  background-color: #070707;
+  background-image: url("rosenbad.jpg")
+}
+
+
 .container {
   margin: 0 auto;
-  width: 80%;
+  padding: 0px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.5);
   animation: slideInLeft 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 
 }
 
@@ -18,38 +29,44 @@ h2 {
 
 #fighter1 {
   background-color: pink;
-  width: 200px;
+  padding: 0px;
 }
 
 #fighter2 {
   background-color: black;
+  padding: 0px;
 }
 
 #fighter3 {
   background-color: blue;
+  padding: 0px;
 }
 
 
 #fighter4 {
   background-color: red;
+  padding: 0px;
 }
 
 
 
 #fighter5 {
   background-color: green;
+  padding: 0px;
 }
 
 
 
 #fighter6 {
   background-color: yellow;
+  padding: 0px;
 }
 
 
 
 #fighter7 {
   background-color: cyan;
+  padding: 0px;
 }
 
 
@@ -61,27 +78,31 @@ h2 {
 .col.s1:active,
 .col.s1:hover {
   animation: flashing 5s infinite;
-  animation-fill-mode: forwards;
-}
-
-.grid-container {
-  opacity: 0;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #e3e3e3;
-  padding: 10px;
-  animation: slideInLeft 1s 1;
-  animation-fill-mode: forwards;
-  position: absolute;
-  margin: 0 auto;
-  width: 50%;
-  margin-left: 25%;
 }
 
 .header {
   animation: slideInTop 1s 1;
   animation-fill-mode: forwards;
   text-align: center;
+  height: 800px;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+}
+
+#headerImage {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  animation: zoomIn 10s infinite;
+  overflow: hidden;
+}
+
+#headerH1 {
+  position: absolute;
+  z-index: 999;
+  color: #fff;
 }
 
 .nav {
@@ -108,7 +129,11 @@ h2 {
   animation: slideInBottom 1s 1;
   animation-fill-mode: forwards;
   text-align: center;
-  margin-top: 80%;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  height: 50px;
+  background-color: rgba(255,255,255, 0.8);
 }
 
 
@@ -125,23 +150,19 @@ h2 {
 @keyframes flashing {
   0% {
     opacity: 0.5;
-    background-color: yellow;
   }
   25% {
     opacity: 1;
-    background-color: green;
   }
   50% {
     opacity: 0.5;
-    background-color: red;
   }
   75% {
     opacity: 1;
-    background-color: blue;
+
   }
   100% {
     opacity: 0.5;
-    background-color: yellow;
   }
 }
 
@@ -189,41 +210,97 @@ h2 {
   }
 }
 
-img {
-  width: 200px;
-  height: 400px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0px;
+@keyframes chosenOne {
+  0% {
+    opacity: 0.5;
+    background-color: red;
+  }
+  25% {
+    opacity: 1;
+    background-color: red;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: red;
+  }
+  75% {
+    opacity: 1;
+    background-color: red;
+
+  }
+  100% {
+    opacity: 0.5;
+    background-color: red;
+  }
 }
 
+@keyframes chosenTwo {
+  0% {
+    opacity: 0.5;
+    background-color: blue;
+  }
+  25% {
+    opacity: 1;
+    background-color: blue;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: blue;
+  }
+  75% {
+    opacity: 1;
+    background-color: blue;
 
+  }
+  100% {
+    opacity: 0.5;
+    background-color: blue;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.0, 1.0);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
 ________________
 
 .col.s1 {
   padding: 0px;
-  animation: slideInBottom 1s;
+  animation: fadein 1s 1;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
   cursor: pointer;
-  width: 200px;
+  margin: 0 auto;
 }
 .col.s1 img {
-  height: 200px;
-  padding: 10px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   cursor: pointer;
-  margin-left: 35%;
 }
 
 .row  {
   margin: 0 auto;
-  width: 100%;
-  position: relative;
+  width: 10%;
+  margin-left: 6%;
 }
 
 .row .col.s1  {
   margin: 0 auto;
-  width: 50%;
-  padding: 10px;
+  width: 5%;
+}
+
+
+.statContainerRight {
+  float: right;
+}
+
+.statContainerLeft {
+  float: left;
 }
