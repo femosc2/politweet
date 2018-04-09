@@ -9,14 +9,21 @@ class RosterProfile extends Component {
   constructor(props) {
     super(props);
   }
+
+  handleClick = () => {
+    const selectedId = this.props.id;
+    console.log("KLICKAD", this.props.id);
+    return selectedId;
+  };
+
   render() {
-    let img = this.props.img
-    let id = this.props.id
-    let alt = this.props.alt
+    const img = this.props.img;
+    const id = this.props.id;
+    const alt = this.props.alt;
 
 
     return (
-    <div className="col s1"><img src={img} alt={alt} id={id}></img></div>
+    <div className="col s1"><img src={img} alt={alt} id={id} onClick={this.handleClick}></img></div>
     );
   }
 }

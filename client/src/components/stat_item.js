@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
+import RosterProfile from './roster_profile';
 
-const StatItem = () => {
+const StatItem = (props) => {
 
-  const statItem = {
-  image: "placeholder IMAGE",
-  name: "placeholder NAMN",
-  description: "placeholder DESCRIPTION",
-  followers: "placeholder FOLLOWERS",
-  friends: "placeholder FRIENDS",
-  quotes: "placeholder QUOTES",
-  mentions: "placeholder MENTIONS",
-  party: "placeholder PARTY",
-  age: "placeholder AGE",
-  accCreation: "placeholder ACC_CREATION",
-  wordCount: "placeholder WORDCOUNT"
-};
+  const statItem = require("./fighter1.json");
 
   const image = statItem.image;
   const name = statItem.name;
@@ -43,6 +32,6 @@ const StatItem = () => {
       <div>{wordCount}</div>
     </li>
   );
-}
 
+}
 export default StatItem;
