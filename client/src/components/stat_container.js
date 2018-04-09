@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import StatItem from './stat_item';
 
 
-class ProfileStats extends Component {
+class StatContainer extends Component {
   constructor() {
     super();
+
 
   }
 
@@ -11,11 +13,11 @@ class ProfileStats extends Component {
     return (
       <div>
         <ul>
-          {statItem}
+          <StatItem />
         </ul>
       </div>
     );
   }
 }
 
-export default ProfileStats;
+export default StatContainer;

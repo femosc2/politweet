@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Roster from "./components/roster";
 import Footer from "./components/footer"
-import RosterProfile from "./components/roster_profile";
+import StatContainer from "./components/stat_container";
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
         <div>
           <Header />
           <Roster />
+          <StatContainer />
           <Footer />
         </div>
     );
