@@ -7,6 +7,14 @@ import Footer from "./components/footer"
 import StatContainer from "./components/stat_container";
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      selectedFighter: null
+    };
+    
+  }
   render() {
       return (
         <div>
