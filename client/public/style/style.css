@@ -60,7 +60,7 @@ h1 {
 
 .logo1 {
   width: 4rem;
-  display: inline-flex;
+  box-sizing: border-box;
   position: fixed;
   animation: slideInLeft 3.5s 1;
   animation:fill-mode: forwards;
