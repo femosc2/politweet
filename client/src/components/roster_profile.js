@@ -8,9 +8,6 @@ import React, { Component } from 'react';
 class RosterProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      shown: true,
-    };
   }
 
   handleClick = () => {
