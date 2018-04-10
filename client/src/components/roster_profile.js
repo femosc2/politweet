@@ -26,9 +26,7 @@ class RosterProfile extends Component {
 
 
     return (
-    <div className="col s1">
-      <img src={img} alt={alt} id={id} onClick={() => {this.handleClick()}}></img>
-    </div>
+    <div className="col s6"><img src={img} alt={alt} id={id} onClick={this.handleClick}></img></div>
     );
   }
 }
