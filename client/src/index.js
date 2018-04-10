@@ -14,14 +14,22 @@ class App extends Component {
       selectedFighter: null
     };
 
+    this.selectFighter = this.selectFighter.bind(this);
+
   }
+
+  selectFighter(fighterId) {
+    console.log(fighterId);
+    this.setState({selectedFighter: fighterId});
+  }
+
   render() {
       return (
         <div>
-          <Roster />
+          <Roster selectFighter={this.selectFighter}/>
           <Header />
           <Navbar />
-          <StatContainer />
+          <StatContainer selectedFighter={this.state.selectedFighter}/>
           <Footer />
         </div>
     );

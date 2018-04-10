@@ -8,15 +8,15 @@ import React, { Component } from 'react';
 class RosterProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      shown: true,
-    };
   }
 
-  handleClick = () => {
-    const selectedId = this.props.id;
-    console.log("KLICKAD", this.props.id);
-    return selectedId;
+  handleClick() {
+    const id = this.props.id;
+    this.props.selectFighter(id);
+
+    // const selectedId = this.props.id;
+    // console.log("KLICKAD", this.props.id);
+    // return selectedId;
   };
 
   render() {
@@ -26,7 +26,9 @@ class RosterProfile extends Component {
 
 
     return (
-    <div className="col s1"><img src={img} alt={alt} id={id} onClick={this.handleClick}></img></div>
+    <div className="col s1">
+      <img src={img} alt={alt} id={id} onClick={() => {this.handleClick()}}></img>
+    </div>
     );
   }
 }
