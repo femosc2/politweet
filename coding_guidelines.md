@@ -197,7 +197,7 @@ const iLoveHummus = true; // Do I love hummus?
 * Closing } på ny rad
 * Blankrad mellan varje deklaration
 
-Bad
+#### Dåligt
 ```CSS
 .avatar{
     border-radius:50%;
@@ -210,7 +210,7 @@ Bad
 }
 ```
 
-Good
+#### Bra
 ```CSS
 .avatar {
   border-radius: 50%;
