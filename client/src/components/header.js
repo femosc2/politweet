@@ -4,23 +4,14 @@ class Header extends Component {
 
     constructor() {
       super();
-      this.state = {
-        isVisible: true,
-      };
     }
 
     render() {
         return (
           <div>
-              { this.state.isVisible ? (
-              <img className="headerImage" src="style/images/calle.jpg"></img>) : null }
-              <div className="headerH1">Politweet</div>
-              { this.state.isVisible ? (
-              <button id="selectFighter" onClick={() => this.setState({
-                  isVisible: !this.state.isVisible
-                  })}>
-            Choose your fighters!
-          </button>) : null }
+              <img className="headerImage" src="style/images/calle.jpg"></img>
+              <div classname="headerH1"><h1>Politweet</h1></div>
+              <div classname="headerH2"><h2>Choose your fighters</h2></div>
           </div>
         );
     }

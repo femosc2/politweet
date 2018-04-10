@@ -1,6 +1,5 @@
 body {
   background-color: #070707;
-  background-image: url("rosenbad.jpg")
 }
 
 
@@ -9,7 +8,7 @@ body {
   padding: 0px;
   width: 20%;
   background-color: rgba(255,255,255,0.5);
-  animation: slideInBottom 4s;
+  animation: slideInBottom 8s;
   animation-fill-mode: forwards;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
@@ -22,11 +21,36 @@ body {
 
 
 h2 {
+  opacity: 0;
   text-align: center;
+  color: #fff;
+  z-index: 999;
+  position: fixed;
+  top: 35%;
+  left: 40%;
+  animation: slideInRightAndSlideOutTop 7s 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+h1 {
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 999;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  animation: slideInLeftAndSlideOutTop 7s 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-#wrapper {
-  animation: fadein 5s;
+.wrapper {
+  animation: fadein 6s 1;
+  background-image: url("rosenbad.jpg");
+  height: 1250px;
+  animation-fill-mode: forwards;
+  margin-top: -3%;
 }
 
 #fighter1 {
@@ -83,7 +107,7 @@ h2 {
 }
 
 
-#selectFighter {
+.selectFighter {
   position: fixed;
   top: 50%;
   margin: 0 auto;
@@ -105,18 +129,31 @@ h2 {
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   top:0
-  z-index: 999;
+  z-index: 100;
   position: fixed;
   margin-top: -3%;
-  animation: slideInTop 1s 1;
+  animation: slideInTopAndSlideOutTop 8s 1;
   animation-fill-mode: forwards;
 }
 
-#headerH1 {
+
+
+.headerH1 {
   position: absolute;
+  top: 50%;
+  text-align: center;
   z-index: 999;
   color: #fff;
 }
+
+.headerH2 {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+}
+
 
 .nav {
 
@@ -154,10 +191,11 @@ h2 {
   animation: slideInRight 1.6s 1;
   animation:fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  margin-top: 3%;
 }
 
 .footer {
-  animation: slideInBottom 1s 1;
+  animation: slideInBottom 6s 1;
   animation-fill-mode: forwards;
   width: 100%;
   text-align: center;
@@ -176,9 +214,14 @@ h2 {
 @keyframes fadein {
   0% {
     opacity: 0;
+    background-image: none;
+  }
+  90% {
+    background-image: none;
   }
   100% {
     opacity: 1;
+    background-image: url("rosenbad.jpg");
   }
 }
 
@@ -201,6 +244,44 @@ h2 {
   }
 }
 
+@keyframes slideInRightAndSlideOutTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-800%);
+  }
+}
+
+@keyframes slideInLeftAndSlideOutTop {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-800%);
+  }
+}
+
 @keyframes slideInLeft {
   0% {
     opacity: 0;
@@ -211,6 +292,9 @@ h2 {
     transform: translateX(0%);
   }
 }
+
+
+
 
 @keyframes slideInRight {
   0% {
@@ -234,10 +318,33 @@ h2 {
   }
 }
 
+@keyframes slideInTopAndSlideOutTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+
 @keyframes slideInBottom {
   0% {
     opacity: 0;
     transform: translateY(100%);
+  }
+  90% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
