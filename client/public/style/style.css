@@ -6,16 +6,15 @@ body {
 .container {
   margin: 0 auto;
   padding: 0px;
-  width: 20%;
+  width: 30%;
   background-color: rgba(255,255,255,0.5);
   animation: slideInBottom 8s;
   animation-fill-mode: forwards;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-  position: absolute;
-  margin-left: 50%;
-  margin-right: 50%;
+  position: fixed;
+  margin-left: 40%;
   z-index: 0;
   margin-top: 3%;
 
@@ -26,7 +25,7 @@ h2 {
   opacity: 0;
   text-align: center;
   color: #fff;
-  z-index: 999;
+  z-index: 900;
   position: fixed;
   top: 35%;
   left: 40%;
@@ -37,7 +36,7 @@ h1 {
   opacity: 0;
   text-align: center;
   color: #fff;
-  z-index: 999;
+  z-index: 900;
   position: fixed;
   top: 25%;
   left: 40%;
@@ -152,6 +151,10 @@ h1 {
   text-align: center;
   z-index: 999;
   color: #fff;
+}
+
+p {
+  z-index: 1000;
 }
 
 
@@ -462,13 +465,13 @@ h1 {
 }
 ________________
 
-.col.s1 {
+.col.s6 {
   padding: 0px;
   animation: fadein 1s 1;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
   cursor: pointer;
-  margin: 0 auto;
+  margin-top: 5%;
 }
 .col.s6 img {
   height: 150px;
@@ -476,9 +479,12 @@ ________________
   cursor: pointer;
 }
 
-.row .col.s1  {
-  margin: 0 auto;
-  width: 5%;
+.row .col.s6  {
+  margin: 5%;
+  width: 30%;
+  margin-top: 5%;
+  cursor: pointer;
+  margin-left: 11.5%;
 }
 
 ____________________________________________
