@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+
+    constructor() {
+      super();
+      this.state = {
+        isVisible: true,
+      };
+    }
+
     render() {
         return (
-          <div className="header">
-              <img id="headerImage" src="style/images/calle.jpg"></img>
-              <div id="headerH1">Politweet</div>
+          <div>
+              { this.state.isVisible ? (
+              <img className="headerImage" src="style/images/calle.jpg"></img>) : null }
+              <div className="headerH1">Politweet</div>
+              { this.state.isVisible ? (
+              <button id="selectFighter" onClick={() => this.setState({
+                  isVisible: !this.state.isVisible
+                  })}>
+            Choose your fighters!
+          </button>) : null }
           </div>
         );
     }

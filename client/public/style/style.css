@@ -9,12 +9,14 @@ body {
   padding: 0px;
   width: 20%;
   background-color: rgba(255,255,255,0.5);
-  animation: slideInLeft 1s;
+  animation: slideInBottom 4s;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  position: absolute;
+  margin-left: 50%;
+  z-index: 0;
 
 }
 
@@ -24,7 +26,7 @@ h2 {
 }
 
 #wrapper {
-  animation: fadein 1s;
+  animation: fadein 5s;
 }
 
 #fighter1 {
@@ -80,23 +82,34 @@ h2 {
   animation: flashing 5s infinite;
 }
 
-.header {
-  animation: slideInTop 1s 1;
+
+#selectFighter {
+  position: fixed;
+  top: 50%;
+  margin: 0 auto;
+  margin-left: 50%;
+  animation: slideInBottomButton 1s 1;
   animation-fill-mode: forwards;
-  text-align: center;
-  height: 800px;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+}
+
+.theStatListContainer {
+  z-index: -5;
+}
+
+.headerImage {
+  height: 1400px;
   width: 100%;
+  overflow: hidden;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-}
-
-#headerImage {
-  height: 800px;
-  width: 100%;
-  position: relative;
-  animation: zoomIn 10s infinite;
-  overflow: hidden;
+  top:0
+  z-index: 999;
+  position: fixed;
+  margin-top: -3%;
+  animation: slideInTop 1s 1;
+  animation-fill-mode: forwards;
 }
 
 #headerH1 {
@@ -121,19 +134,37 @@ h2 {
   margin-right: 10px;
 }
 
+.statItem {
+  z-index: -3;
+  width: 100%;
+}
+
+#statList {
+  width: 33%;
+  z-index: -3;
+}
+
 .kuken {
   width: 100%;
+  position: fixed;
+  animation: slideInRight 1s 1;
+  animation:fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
 }
 
 .footer {
   animation: slideInBottom 1s 1;
   animation-fill-mode: forwards;
+  width: 100%;
   text-align: center;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   height: 50px;
   background-color: rgba(255,255,255, 0.8);
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
 }
 
 
@@ -203,6 +234,17 @@ h2 {
   0% {
     opacity: 0;
     transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideInBottomButton {
+  0% {
+    opacity: 0;
+    transform: translateY(400%);
   }
   100% {
     opacity: 1;
