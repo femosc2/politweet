@@ -7,7 +7,7 @@ class Navbar extends Component {
 
     return (
 
-        <div className="modalbox">
+        <div className="modalBox">
           <ul className="modalButton">
 
             <ul id="nav-mobile" class="right">

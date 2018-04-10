@@ -1,7 +1,12 @@
 body {
   background-color: #070707;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+  font-weight: 200;
 }
 
+p {
+  z-index: 999 !important;
+}
 
 .container {
   margin: 0 auto;
@@ -15,33 +20,33 @@ body {
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   position: absolute;
   margin-left: 50%;
-  margin-right: 50%;
   z-index: 0;
   margin-top: 3%;
-
 }
-
 
 h2 {
   opacity: 0;
   text-align: center;
   color: #fff;
-  z-index: 999;
+  z-index: 900;
   position: fixed;
   top: 35%;
   left: 40%;
-  animation: slideInRightAndSlideOutLeft 8s 1;
+  animation: slideInRightAndSlideOutTop 7s 1;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
+
 h1 {
   opacity: 0;
   text-align: center;
   color: #fff;
-  z-index: 999;
+  z-index: 900;
   position: fixed;
   top: 25%;
   left: 40%;
-  animation: slideInLeftAndSlideOutRight 8s 1;
+  animation: slideInLeftAndSlideOutTop 7s 1;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -51,6 +56,15 @@ h1 {
   height: 1250px;
   animation-fill-mode: forwards;
   margin-top: -3%;
+}
+
+.logo1 {
+  width: 4rem;
+  display: inline-flex;
+  position: fixed;
+  animation: slideInLeft 3.5s 1;
+  animation:fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
 }
 
 #fighter1 {
@@ -68,34 +82,25 @@ h1 {
   padding: 0px;
 }
 
-
 #fighter4 {
   background-color: red;
   padding: 0px;
 }
-
-
 
 #fighter5 {
   background-color: green;
   padding: 0px;
 }
 
-
-
 #fighter6 {
   background-color: yellow;
   padding: 0px;
 }
 
-
-
 #fighter7 {
   background-color: cyan;
   padding: 0px;
 }
-
-
 
 #fighter8 {
   background-color: orange;
@@ -105,7 +110,6 @@ h1 {
 .col.s6:hover {
   animation: flashing 5s infinite;
 }
-
 
 .selectFighter {
   position: fixed;
@@ -136,13 +140,11 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-
-
 .headerH1 {
   position: absolute;
   top: 50%;
   text-align: center;
-  z-index: 999;
+  z-index: 900;
   color: #fff;
 }
 
@@ -150,10 +152,9 @@ h1 {
   position: absolute;
   top: 50%;
   text-align: center;
-  z-index: 999;
+  z-index: 900;
   color: #fff;
 }
-
 
 .nav {
 
@@ -164,7 +165,7 @@ h1 {
 }
 
 .modal-footer {
-  background-color: #90caf9 !important;4
+  background-color: #90caf9 !important;
 }
 
 .right {
@@ -208,8 +209,6 @@ h1 {
   bottom: 0;
   z-index: -1;
 }
-
-
 
 @keyframes fadein {
   0% {
@@ -293,9 +292,6 @@ h1 {
   }
 }
 
-
-
-
 @keyframes slideInRight {
   0% {
     opacity: 0;
@@ -304,44 +300,6 @@ h1 {
   100% {
     opacity: 1;
     transform: translateX(0%);
-  }
-}
-
-@keyframes slideInRightAndSlideOutLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-}
-
-@keyframes slideInLeftAndSlideOutRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
   }
 }
 
@@ -374,7 +332,6 @@ h1 {
     transform: translateY(-100%);
   }
 }
-
 
 @keyframes slideInBottom {
   0% {
@@ -480,7 +437,6 @@ ________________
   margin: 0 auto;
   width: 5%;
 }
-
 ____________________________________________
 
 .statContainerRight {
