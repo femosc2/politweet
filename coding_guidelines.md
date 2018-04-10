@@ -188,3 +188,41 @@ const iLoveHummus = true; // Do I love hummus?
 
 
 ### React
+
+
+### CSS
+* När vi använder fler än en selector ge varje selector en egen rad.
+* Mellanslag innan öppnings {
+* Använd mellanslag efter, och inte innan, :
+* Closing } på ny rad
+* Blankrad mellan varje deklaration
+
+#### Dåligt
+```CSS
+.avatar{
+    border-radius:50%;
+    border:2px solid white; }
+.no, .nope, .not_good {
+    // ...
+}
+#lol-no {
+  // ...
+}
+```
+
+#### Bra
+```CSS
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.selector,
+.per-line {
+  // ...
+}
+```
+
+* % istället för px.
+* 0; istället för none;
