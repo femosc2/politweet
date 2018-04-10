@@ -18,12 +18,7 @@ p {
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-<<<<<<< HEAD
-  position: absolute;
-  margin-left: 50%;
-=======
   position: fixed;
->>>>>>> 2cade228358ea505c00ce79f39987eb58a181407
   z-index: 0;
   left: 0;
   right: 0;
@@ -163,14 +158,11 @@ h1 {
   color: #fff;
 }
 
-<<<<<<< HEAD
-=======
 p {
   z-index: 1000;
 }
 
 
->>>>>>> 2cade228358ea505c00ce79f39987eb58a181407
 .nav {
 
 }
