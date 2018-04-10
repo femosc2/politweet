@@ -14,8 +14,10 @@ body {
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   position: fixed;
-  margin-left: 40%;
   z-index: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   margin-top: 3%;
 
 }
