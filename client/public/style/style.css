@@ -16,7 +16,7 @@ body {
   position: absolute;
   margin-left: 50%;
   z-index: 0;
-  margin-top: 5%;
+  margin-top: 3%;
 
 }
 
@@ -102,8 +102,8 @@ h1 {
   background-color: orange;
 }
 
-.col.s1:active,
-.col.s1:hover {
+.col.s6:active,
+.col.s6:hover {
   animation: flashing 5s infinite;
 }
 
@@ -433,16 +433,10 @@ ________________
   cursor: pointer;
   margin: 0 auto;
 }
-.col.s1 img {
+.col.s6 img {
   height: 150px;
   width: 150px;
   cursor: pointer;
-}
-
-.row  {
-  margin: 0 auto;
-  width: 10%;
-  margin-left: 6%;
 }
 
 .row .col.s1  {
@@ -450,6 +444,7 @@ ________________
   width: 5%;
 }
 
+____________________________________________
 
 .statContainerRight {
   float: right;
