@@ -11,16 +11,23 @@ p {
 .container {
   margin: 0 auto;
   padding: 0px;
-  width: 20%;
+  width: 30%;
   background-color: rgba(255,255,255,0.5);
   animation: slideInBottom 8s;
   animation-fill-mode: forwards;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+<<<<<<< HEAD
   position: absolute;
   margin-left: 50%;
+=======
+  position: fixed;
+>>>>>>> 2cade228358ea505c00ce79f39987eb58a181407
   z-index: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   margin-top: 3%;
 }
 
@@ -156,6 +163,14 @@ h1 {
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+p {
+  z-index: 1000;
+}
+
+
+>>>>>>> 2cade228358ea505c00ce79f39987eb58a181407
 .nav {
 
 }
@@ -419,13 +434,13 @@ h1 {
 }
 ________________
 
-.col.s1 {
+.col.s6 {
   padding: 0px;
   animation: fadein 1s 1;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
   cursor: pointer;
-  margin: 0 auto;
+  margin-top: 5%;
 }
 .col.s6 img {
   height: 150px;
@@ -433,9 +448,12 @@ ________________
   cursor: pointer;
 }
 
-.row .col.s1  {
-  margin: 0 auto;
-  width: 5%;
+.row .col.s6  {
+  margin: 5%;
+  width: 30%;
+  margin-top: 5%;
+  cursor: pointer;
+  margin-left: 11.5%;
 }
 ____________________________________________
 
