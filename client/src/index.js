@@ -19,6 +19,7 @@ class App extends Component {
       return (
         <div>
           <Roster />
+          <logo />
           <Header />
           <Navbar />
           <StatContainer />
