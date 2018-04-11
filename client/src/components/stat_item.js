@@ -6,12 +6,12 @@ class StatItem extends Component {
   render() {
 
     if (this.props.selectedFighter === null) {
-      return (<div>Loading</div>)
+      return (<div id="hiddenLoading">Loading</div>)
     }
 
     /* Chooses the JSON file for the selected fighter */
     const statItem = require("./" + this.props.selectedFighter + ".json");
-    
+
     const image = statItem.image;
     const name = statItem.name;
     const description = statItem.description;
@@ -26,17 +26,17 @@ class StatItem extends Component {
 
     return (
       <li id="statList">
-        <div className="statItem">{image}</div>
-        <div className="statItem">{name}</div>
-        <div className="statItem">{description}</div>
-        <div className="statItem">{followers}</div>
-        <div className="statItem">{friends}</div>
-        <div className="statItem">{quotes}</div>
-        <div className="statItem">{mentions}</div>
-        <div className="statItem">{party}</div>
-        <div className="statItem">{age}</div>
-        <div className="statItem">{accCreation}</div>
-        <div className="statItem">{wordCount}</div>
+        <div className="statItem"><p>{image}</p></div>
+        <div className="statItem"><p>{name}</p></div>
+        <div className="statItem"><p>{description}</p></div>
+        <div className="statItem"><p>{followers}</p></div>
+        <div className="statItem"><p>{friends}</p></div>
+        <div className="statItem"><p>{quotes}</p></div>
+        <div className="statItem"><p>{mentions}</p></div>
+        <div className="statItem"><p>{party}</p></div>
+        <div className="statItem"><p>{age}</p></div>
+        <div className="statItem"><p>{accCreation}</p></div>
+        <div className="statItem"><p>{wordCount}</p></div>
       </li>
     );
   }
