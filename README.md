@@ -22,4 +22,5 @@ You can now start a local server by typing:
 npm start
 ```
 
-### 5. The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually.
+### 5.
+The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually.
