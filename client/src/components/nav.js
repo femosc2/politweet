@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+/* Renders two materialize mondal buttons (HTML code) with various content, which works as our navigation menu
+Further down in mondal 'Leaderboard', a table with various content is presented. */
+
 class Navbar extends Component {
   render() {
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+/* Renders a header and some header text to the website */
+
 class Header extends Component {
 
     constructor() {
