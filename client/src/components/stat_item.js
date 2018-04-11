@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+/* When the user selects a fighter this component renders a list of the JSON data of the chosen fighter.
+*/
 class StatItem extends Component {
   render() {
 
@@ -7,7 +9,9 @@ class StatItem extends Component {
       return (<div>Loading</div>)
     }
 
+    /* Chooses the JSON file for the selected fighter */
     const statItem = require("./" + this.props.selectedFighter + ".json");
+    
     const image = statItem.image;
     const name = statItem.name;
     const description = statItem.description;
