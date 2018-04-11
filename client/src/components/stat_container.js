@@ -12,13 +12,13 @@ class StatContainer extends Component {
     return (
       <div>
         <div className="theStatListContainer">
-          <ul className="theStatListContainer">
+          <ul>
             <StatItem selectedFighter={this.props.selectedFighter[0]}/>
           </ul>
         </div>
 
         <div className="theStatListContainer2">
-          <ul className="theStatListContainer2">
+          <ul>
             <StatItem selectedFighter={this.props.selectedFighter[1]}/>
           </ul>
         </div>
