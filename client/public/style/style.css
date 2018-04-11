@@ -18,11 +18,11 @@ p {
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-  position: fixed;
-  z-index: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  position: fixed; /* Centers an element with position:fixed */
+  z-index: 0;      /* Centers an element with position:fixed */
+  left: 0;         /* Centers an element with position:fixed */
+  right: 0;        /* Centers an element with position:fixed */
+  margin: 0 auto;  /* Centers an element with position:fixed */
   margin-top: 5%;
 }
 
@@ -35,9 +35,9 @@ h2 {
   top: 35%;
   left: 40%;
   animation: slideInRightAndSlideOutLeft 7s 1;
-  animation-timing-function: cubic-bezier(.1,1.01,1,.56);
+  animation-timing-function: cubic-bezier(.1,1.01,1,.56);/* The curve of which the animation animates.*/
   animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; /* Once the animation is finished it freezes on the last frame */
 }
 
 h1 {
@@ -127,7 +127,7 @@ h1 {
 
 .col.s6:active,
 .col.s6:hover {
-  animation: flashing 5s infinite;
+  animation: flashing 3.5s infinite;
 }
 
 .selectFighter {
@@ -177,11 +177,6 @@ h1 {
 
 p {
   z-index: 1000;
-}
-
-
-.nav {
-
 }
 
 .modal-content {
@@ -234,11 +229,11 @@ p {
   z-index: -1;
 }
 
-@keyframes fadein {
-  0% {
+@keyframes fadein {  /*Defines the name of the animation*/
+  0% { /*When the animation is 0% done the following happens*/
     opacity: 0;
   }
-  100% {
+  100% { /*When the animation is 100% done the following happens*/
     opacity: 1;
   }
 }
@@ -265,7 +260,7 @@ p {
 @keyframes slideInRightAndSlideOutTop {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Slides on the X-axis */
   }
   20% {
     opacity: 1;
@@ -277,7 +272,7 @@ p {
 
   100% {
     opacity: 0;
-    transform: translateY(-800%);
+    transform: translateY(-800%); /* Slides on the Y-axis */
   }
 }
 
@@ -477,13 +472,16 @@ p {
     transform: scale(1.0, 1.0);
   }
   50% {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5); /* Enlarges the picture */
   }
   100% {
     transform: scale(1.0, 1.0);
   }
 }
 ________________
+
+
+/* Grid elements */
 
 .col.s6 {
   padding: 0px;
