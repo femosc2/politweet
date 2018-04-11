@@ -23,7 +23,7 @@ p {
   left: 0;
   right: 0;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 h2 {
@@ -34,7 +34,8 @@ h2 {
   position: fixed;
   top: 35%;
   left: 40%;
-  animation: slideInRightAndSlideOutTop 7s 1;
+  animation: slideInRightAndSlideOutLeft 7s 1;
+  animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
@@ -47,17 +48,33 @@ h1 {
   position: fixed;
   top: 25%;
   left: 40%;
-  animation: slideInLeftAndSlideOutTop 7s 1;
+  animation: slideInLeftAndSlideOutRight 7s 1;
   animation-delay: 1s;
+  animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-fill-mode: forwards;
 }
 
 .wrapper {
   animation: fadein 6s 1;
   background-image: url("rosenbad.jpg");
-  height: 1250px;
+  height: 1200px;
   animation-fill-mode: forwards;
   margin-top: -3%;
+}
+
+.waves-effect.waves-light.btn-large {
+  width: 30%;
+  animation: slideInBottom 8s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  padding: 0px;
 }
 
 .logo1 {
@@ -220,14 +237,9 @@ p {
 @keyframes fadein {
   0% {
     opacity: 0;
-    background-image: none;
-  }
-  90% {
-    background-image: none;
   }
   100% {
     opacity: 1;
-    background-image: url("rosenbad.jpg");
   }
 }
 
@@ -281,10 +293,57 @@ p {
     opacity: 1;
     transform: translateX(0%);
   }
+  90% {
+    opacity: 0;
+  }
 
   100% {
     opacity: 0;
     transform: translateY(-800%);
+  }
+}
+
+@keyframes slideInRightAndSlideOutLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInLeftAndSlideOutRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
 }
 

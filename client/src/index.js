@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Roster from "./components/roster";
 import Navbar from "./components/nav";
-import Footer from "./components/footer";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
+import FightButton from "./components/fight_button";
 
 class App extends Component {
   constructor() {
@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   selectFighter(fighterId) {
+    console.log(fighterId);
     this.setState({selectedFighter: fighterId});
   }
 
@@ -29,6 +30,7 @@ class App extends Component {
           <Header />
           <Navbar />
           <StatContainer selectedFighter={this.state.selectedFighter}/>
+          <FightButton buttonText="FIGHT!" />
           <Logo />
         </div>
     );
