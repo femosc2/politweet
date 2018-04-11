@@ -17,7 +17,7 @@ class App extends Component {
       selectedFighter: []
     };
 
-    console.log(this.state);
+    console.log("initial state", this.state);
 
 // Binds the function selectFighter since it needs accsess to the state and change it from null to the fighter the user selected
 
@@ -28,7 +28,15 @@ class App extends Component {
 // Shows fighter stats on user click, depending on which figher the user selected. Logs result to the browser console.
   selectFighter(fighterId) {
     console.log(fighterId);
-    this.setState({selectedFighter: [fighterId]});
+    if (this.state.selectedFighter.length < 2) {
+      this.state.selectedFighter.push(fighterId);
+      this.setState({selectedFighter: [fighterId]});
+    }
+
+    if (this.state.selectedFighter.length >= 2) {
+      console.log("sry brush d e maxat");
+    }
+    console.log("new state", this.state);
   }
 
 // Renders the different components imported above and returns them to ReactDOM below.
@@ -40,8 +48,8 @@ class App extends Component {
           <Header />
           <Navbar />
 
-          { this.state.selectedFighter.map(fighter => {
-              return <StatContainer selectedFighter={fighter}/>
+          { this.state.selectedFighter.map(fighterId => {
+              return <StatContainer selectedFighter={fighterId} />
             })
           }
 
