@@ -5,8 +5,6 @@ import StatItem from './stat_item';
 class StatContainer extends Component {
   constructor() {
     super();
-
-
   }
 
   render() {
