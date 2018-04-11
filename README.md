@@ -57,7 +57,7 @@ Python2.7 comes preinstalled on most Linux distros, if you have removed the pyth
 2. Download/install PIP through ```apt-get install python-pip```
 3. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
 
--### How to use Politweet ###
+### How to use Politweet ###
 -------------
 ## How to use Politweet ##
 <strong>Politweet is currently in the early stage of development. With our current build, you may download and store selected tweets through your cmd/terminal.</strong>
@@ -80,7 +80,7 @@ and the profiles you specified in the script will be downloaded as JSON files.
 <strong>A:</strong> First, make sure that you have Python2 installed by writing ```python -V``` in your terminal.
 +If you don't get the following output: * Python 2.7.14 * you have not installed Python2.
 +Head back up and follow the install guide for your local OS.
-+
+
 <p align="center">
   <img src="https://thumbs.gfycat.com/HorribleNeglectedGrassspider-size_restricted.gif"><br>
   Don't forget to Star our repository/ <br>
