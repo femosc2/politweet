@@ -27,11 +27,11 @@ The server should start on localhost:3000 automatically, if it doesn't, you can 
 
 
 ## Tweepy
--### How to use and install and the Tweepy library using Python2 <br>
--<strong>The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue! <br> Enjoy the Politweet!</strong>
-+<strong> Welcome to the Politweet!</strong> Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues), after you have read through the FAQ! The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts.
+### How to use and install and the Tweepy library using Python2 <br>
+<strong>The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue! <br> Enjoy the Politweet!</strong>
+<strong> Welcome to the Politweet!</strong> Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues), after you have read through the FAQ! The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts.
 <br>
--
+
 ### Windows ###
 --------------
 ## Windows ##
