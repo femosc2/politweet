@@ -5,11 +5,8 @@ import Roster from "./components/roster";
 import Navbar from "./components/nav";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
-<<<<<<< HEAD
-=======
 import FightButton from "./components/fight_button";
 // Imports all our React components needed in order to render our page(s)
->>>>>>> 71341eadab8bf203ee14ef5d5393881e949be6c8
 
 class App extends Component {
   constructor() {
@@ -19,12 +16,11 @@ class App extends Component {
     this.state = {
       selectedFighter: ["fighter1", "fighter2"]
     };
-<<<<<<< HEAD
+
     console.log(this.state);
-=======
 
 // Binds the function selectFighter since it needs accsess to the state and change it from null to the fighter the user selected
->>>>>>> 71341eadab8bf203ee14ef5d5393881e949be6c8
+
     this.selectFighter = this.selectFighter.bind(this);
 
   }

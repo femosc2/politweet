@@ -17,8 +17,8 @@ class StatContainer extends Component {
           </ul>
         </div>
 
-        <div className="theStatListContainer">
-          <ul className="theStatListContainer">
+        <div className="theStatListContainer2">
+          <ul className="theStatListContainer2">
             <StatItem selectedFighter={this.props.selectedFighter[1]}/>
           </ul>
         </div>
