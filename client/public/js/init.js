@@ -1,16 +1,14 @@
-(function ($) {
+// Pair programming by Adam Nilsson and Victor Persson, 2018-04-09
+
+(function ($) { // Start of jQuery name space
     $(function () {
 
-        //initialize all modals
+        //initialize all implemented materialize modals on the page.
         $('.modal').modal();
 
-
-
-        //or by click on trigger
+        //Here it activiates mondals by click on trigger
         $('.trigger-modal').modal();
 
-        $('.sidenav').sidenav();
-
-
-    }); // end of document ready
+    }
+  );
 })(jQuery); // end of jQuery name space
