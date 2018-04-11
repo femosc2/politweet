@@ -12,7 +12,7 @@ class App extends Component {
     super();
 
     this.state = {
-      selectedFighter: null
+      selectedFighter: []
     };
 
     this.selectFighter = this.selectFighter.bind(this);
@@ -20,7 +20,7 @@ class App extends Component {
 
   selectFighter(fighterId) {
     console.log(fighterId);
-    this.setState({selectedFighter: fighterId});
+    this.setState({selectedFighter: [fighterId]});
   }
 
   render() {
@@ -29,7 +29,12 @@ class App extends Component {
           <Roster selectFighter={this.selectFighter}/>
           <Header />
           <Navbar />
-          <StatContainer selectedFighter={this.state.selectedFighter}/>
+
+          { this.state.selectedFighter.map(fighter => {
+              return <StatContainer selectedFighter={fighter}/>
+            })
+          }
+
           <FightButton buttonText="FIGHT!" />
           <Logo />
         </div>
