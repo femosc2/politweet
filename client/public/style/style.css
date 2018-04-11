@@ -62,11 +62,15 @@ h1 {
   margin-top: -3%;
 }
 
+#hiddenLoading {
+  display: none;
+}
+
 .waves-effect.waves-light.btn-large {
   width: 30%;
   animation: slideInBottom 8s;
   animation-fill-mode: forwards;
-  z-index: -1;
+  z-index: 3;
   position: fixed;
   left: 0;
   right: 0;
@@ -75,6 +79,7 @@ h1 {
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   padding: 0px;
+  margin-top: 3%;
 }
 
 .logo1 {
@@ -84,6 +89,7 @@ h1 {
   animation: slideInLeft 3.5s 1;
   animation:fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  margin-top: 3%;
 }
 
 #fighter1 {
@@ -142,10 +148,40 @@ h1 {
 
 .theStatListContainer {
   z-index: -5;
-  background-color: black;
-  width: 30%;
+  background-color: rgba(255,255,255,0.5);
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  width: 40%;
   position: fixed;
-  left: 0;  5
+  top: -20;
+  left: 10;
+  margin-top: 5%;
+  margin-left: 2%;
+  animation: slideInRight 1s;
+  animation-fill-mode: forwards;
+}
+
+.theStatListContainer p {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+ul {
+  text-align: center;
+}
+
+.statItem {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#statList {
+  width: 33%;
+  z-index: -3;
+  margin: 0 auto;
 }
 
 .headerImage {
@@ -195,15 +231,6 @@ p {
   margin-right: 10px;
 }
 
-.statItem {
-  z-index: -3;
-  width: 100%;
-}
-
-#statList {
-  width: 33%;
-  z-index: -3;
-}
 
 .btn {
   background-color: #42a5f5;
@@ -215,7 +242,7 @@ p {
   animation: slideInRight 1.6s 1;
   animation:fill-mode: forwards;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .footer {
@@ -320,7 +347,7 @@ p {
 
   100% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(800%);
   }
 }
 
@@ -342,7 +369,7 @@ p {
 
   100% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-800%);
   }
 }
 
@@ -499,6 +526,9 @@ ________________
   height: 150px;
   width: 150px;
   cursor: pointer;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 }
 
 .row .col.s6  {
@@ -509,17 +539,3 @@ ________________
   margin-left: 11.5%;
 }
 ____________________________________________
-
-
-
-.theStatListContainer {
-  background-color: black;
-}
-
-.statContainerRight {
-  float: right;
-}
-
-.statContainerLeft {
-  float: left;
-}

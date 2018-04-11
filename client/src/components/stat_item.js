@@ -6,7 +6,7 @@ class StatItem extends Component {
   render() {
 
     if (this.props.selectedFighter === null) {
-      return (<div>Loading</div>)
+      return (<div id="hiddenLoading">Loading</div>)
     }
 
     /* Chooses the JSON file for the selected fighter */
