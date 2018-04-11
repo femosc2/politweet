@@ -21,7 +21,6 @@ class App extends Component {
   }
 
   selectFighter(fighterId) {
-    console.log(fighterId);
     this.setState({selectedFighter: fighterId});
   }
 
