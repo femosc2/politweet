@@ -142,6 +142,10 @@ h1 {
 
 .theStatListContainer {
   z-index: -5;
+  background-color: black;
+  width: 30%;
+  position: fixed;
+  left: 0;
 }
 
 .headerImage {
@@ -505,6 +509,12 @@ ________________
   margin-left: 11.5%;
 }
 ____________________________________________
+
+
+
+.theStatListContainer {
+  background-color: black;
+}
 
 .statContainerRight {
   float: right;
