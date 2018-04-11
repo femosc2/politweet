@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+/* Renders a logo on the website */
+
 class Logo extends Component {
   constructor() {
     super();

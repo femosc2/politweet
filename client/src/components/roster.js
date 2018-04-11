@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import RosterProfile from "./roster_profile";
 
-/* This class shows the roster where the user will pick what fighters he or she wants to use */
+/* This class shows the roster where the user will pick what fighters he or she wants to use
+This component imports RosterProfile and uses the props id, alt, img and selectFighter deciding
+what content is rendered to the HTML */
 class Roster extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-
   return (
     <div className="container" >
       <div className="row">
