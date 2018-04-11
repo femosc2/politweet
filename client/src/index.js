@@ -16,7 +16,6 @@ class App extends Component {
     };
 
     this.selectFighter = this.selectFighter.bind(this);
-
   }
 
   selectFighter(fighterId) {
