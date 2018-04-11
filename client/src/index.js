@@ -5,22 +5,21 @@ import Roster from "./components/roster";
 import Navbar from "./components/nav";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
-import FightButton from "./components/fight_button";
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      selectedFighter: null
+      selectedFighter: ["fighter1", "fighter2"]
     };
-
+    console.log(this.state);
     this.selectFighter = this.selectFighter.bind(this);
+
   }
 
   selectFighter(fighterId) {
-    console.log(fighterId);
-    this.setState({selectedFighter: fighterId});
+    this.setState({selectedFighter: [fighterId, fighterId]});
   }
 
   render() {
@@ -30,7 +29,6 @@ class App extends Component {
           <Header />
           <Navbar />
           <StatContainer selectedFighter={this.state.selectedFighter}/>
-          <FightButton buttonText="FIGHT!" />
           <Logo />
         </div>
     );

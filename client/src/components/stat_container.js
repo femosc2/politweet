@@ -10,10 +10,18 @@ class StatContainer extends Component {
 
   render() {
     return (
-      <div className="theStatListContainer">
-        <ul className="theStatListContainer">
-          <StatItem selectedFighter={this.props.selectedFighter}/>
-        </ul>
+      <div>
+        <div className="theStatListContainer">
+          <ul className="theStatListContainer">
+            <StatItem selectedFighter={this.props.selectedFighter[0]}/>
+          </ul>
+        </div>
+
+        <div className="theStatListContainer">
+          <ul className="theStatListContainer">
+            <StatItem selectedFighter={this.props.selectedFighter[1]}/>
+          </ul>
+        </div>
       </div>
     );
   }
