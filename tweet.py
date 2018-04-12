@@ -12,9 +12,9 @@ from time import gmtime, strftime, sleep
 
 
 #Twitter API credentials Get your own API credentials @ apps.twitter.com
-consumer_key = 	"9fdjDcnEUV4db6fjfUdEjXQAY"
-consumer_secret =   "lQcCAvN3rFhiArOquAiBgtMUZu8O3ept0ZezXtWiVupwSWkGXd"
-access_key = 	"318449791-OUeKzhbSdbQzcy29bK3nkjAqqfEHxHFY9teugrYY"
+consumer_key = "9fdjDcnEUV4db6fjfUdEjXQAY"
+consumer_secret = "lQcCAvN3rFhiArOquAiBgtMUZu8O3ept0ZezXtWiVupwSWkGXd"
+access_key = "318449791-OUeKzhbSdbQzcy29bK3nkjAqqfEHxHFY9teugrYY"
 access_secret = "qOnRIANIw0mXj51CORPs4ePqlwkfRh80vudbTGqyLe9Jt"
 
 
@@ -33,7 +33,7 @@ def writeTweetsToJson(screen_name):
     alltweets = []
 
     #Downloads 200 tweets at the time (200 tweets is the maxium tweepy can handle at the time)
-    new_tweets = api.user_timeline(screen_name = screen_name,count=200)
+    new_tweets = api.user_timeline(screen_name = screen_name, count = 200)
 
     #Saves the tweets to the empty list
     alltweets.extend(new_tweets)
@@ -45,7 +45,7 @@ def writeTweetsToJson(screen_name):
     while len(new_tweets) > 0:
 
         #all subsiquent requests use the max_id param to prevena
-        new_tweets = api.user_timeline(screen_name = screen_name,count=200,max_id=oldest)
+        new_tweets = api.user_timeline(screen_name = screen_name, count=200, max_id = oldest)
 
         #Adds the tweets.
         alltweets.extend(new_tweets)
@@ -60,11 +60,11 @@ def writeTweetsToJson(screen_name):
     file = open(screen_name + "tweets.json", 'wb')
     print "Creating a JSON File...."
     for status in alltweets:
-        json.dump(status._json,file,sort_keys = True,indent = 4)
+        json.dump(status._json,file, sort_keys = True, indent = 4)
 
     #Closes the JSON file when the tweets are dumped.
     print "Tweets from " + screen_name + " are downloaded and saved."
-    print "_"*40
+    print "_" * 40
     file.close()
 
 if __name__ == '__main__':
@@ -78,7 +78,7 @@ if __name__ == '__main__':
         writeTweetsToJson("@jsjostedt")
         writeTweetsToJson("@bjorklundjan")
         writeTweetsToJson("@BuschEbba")
-        print("_"*40)
+        print("_" * 40)
         print("Done!")
-        print("_"*40)
+        print("_" * 40)
         sleep(10)

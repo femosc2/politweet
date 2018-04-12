@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 /* This component creates a fighter */
 
 class RosterProfile extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleClick() {
     const id = this.props.id;
     this.props.selectFighter(id);

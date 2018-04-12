@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
-/* Renders two materialize mondal buttons (HTML code) with various content, which works as our navigation menu
-Further down in mondal 'Leaderboard', a table with various content is presented. */
+/*
+Boilerplate with static data for the leaderboard- and about buttons.
+Will be changed later with real functionality.
+*/
 
-class Navbar extends Component {
+class Modals extends Component {
   render() {
-
     return (
       <div className="modalBox">
         <ul className="modalButton">
-
           <ul id="nav-mobile" class="right">
             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">About</a>
-
             <div id="modal1" class="modal">
               <div class="modal-content">
                 <h4 class="modalHeader">About</h4>
@@ -27,7 +26,6 @@ class Navbar extends Component {
 
           <ul id="nav-mobile" class="right">
             <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Leaderboard</a>
-
             <div id="modal2" class="modal">
               <div class="modal-content">
                 <h4 class="modalHeader">Leaderboard</h4>
@@ -65,12 +63,10 @@ class Navbar extends Component {
               </div>
             </div>
           </ul>
-
         </ul>
       </div>
-
     );
   }
-};
+}
 
-export default Navbar;
+export default Modals;

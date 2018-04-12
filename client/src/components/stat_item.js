@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-/* When the user selects a fighter this component renders a list of the JSON data of the chosen fighter.
+/*
+When the user selects a fighter this component renders a
+list of the JSON data of the chosen fighter.
 */
 class StatItem extends Component {
   render() {
@@ -9,9 +11,10 @@ class StatItem extends Component {
       return (<div id="hiddenLoading">Loading</div>)
     }
 
-    /* Chooses the JSON file for the selected fighter */
-    const statItem = require("./" + this.props.selectedFighter + ".json");
+    // Chooses the JSON file for the selected fighter
+    const statItem = require("../../tweets/" + this.props.selectedFighter + ".json");
 
+    // TODO make a list instead of a bunch of const's
     const image = statItem.image;
     const name = statItem.name;
     const description = statItem.description;
@@ -26,17 +29,17 @@ class StatItem extends Component {
 
     return (
         <li id="statList">
-          <div className="statItem">{image}</div>
-          <div className="statItem">{name}</div>
-          <div className="statItem">{description}</div>
-          <div className="statItem">{followers}</div>
-          <div className="statItem">{friends}</div>
-          <div className="statItem">{quotes}</div>
-          <div className="statItem">{mentions}</div>
-          <div className="statItem">{party}</div>
-          <div className="statItem">{age}</div>
-          <div className="statItem">{accCreation}</div>
-          <div className="statItem">{wordCount}</div>
+          <div className="statItem"> {image} </div>
+          <div className="statItem"> {name} </div>
+          <div className="statItem"> {description} </div>
+          <div className="statItem"> {followers} </div>
+          <div className="statItem"> {friends} </div>
+          <div className="statItem"> {quotes} </div>
+          <div className="statItem"> {mentions} </div>
+          <div className="statItem"> {party} </div>
+          <div className="statItem"> {age} </div>
+          <div className="statItem"> {accCreation} </div>
+          <div className="statItem"> {wordCount} </div>
         </li>
     );
   }
