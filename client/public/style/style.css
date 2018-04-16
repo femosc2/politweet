@@ -36,7 +36,7 @@ h2 {
   position: fixed;
   top: 35%;
   left: 40%;
-  animation: slideInRightAndSlideOutLeft 7s 1;
+  animation: slideInLeftAndSlideOutRight 7s 1;
   /* The curve of which the animation animates */
   animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-delay: 1s;
@@ -54,14 +54,14 @@ h1 {
   position: fixed;
   top: 25%;
   left: 40%;
-  animation: slideInLeftAndSlideOutRight 7s 1;
+  animation: slideInRightAndSlideOutLeft 7s 1;
   animation-delay: 1s;
   animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-fill-mode: forwards;
 }
 
 .wrapper {
-  animation: fadein 6s 1;
+  animation: fadeIn 6s 1;
   background-image: url("rosenbad.jpg");
   height: 1200px;
   animation-fill-mode: forwards;
@@ -152,8 +152,8 @@ h1 {
 
 .col.s6:active,
 .col.s6:hover {
-  animation: flashing 3.5s infinite;
-  transform: scale(1.2);
+  animation: zoomIn 0.5s 1 cubic-bezier(.54,.65,0,2.06), flashing 3.5s infinite;
+  animation-fill-mode: forwards;
 }
 
 .selectFighter {
@@ -182,6 +182,7 @@ h1 {
   margin-top: 5%;
   margin-left: 2%;
   animation: slideInRight 1s;
+  animation-timing-function: cubic-bezier(.54,.65,0,1.5);
   animation-fill-mode: forwards;
 }
 
@@ -209,6 +210,8 @@ h1 {
   font-size: 15px;
   margin: 0 auto;
   padding: 5px;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
 }
 
 ul {
@@ -218,6 +221,14 @@ ul {
 .statItem {
   text-align: center;
   margin: 0 auto;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.statItem p {
+  text-align: center;
+  margin: 0 auto;
+  animation: fadeIn 2s 1;
 }
 
 #statList {
@@ -258,7 +269,7 @@ ul {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #fff;
 }
 
 .modal-footer {
@@ -298,7 +309,7 @@ ul {
   z-index: -1;
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -566,8 +577,14 @@ ul {
     transform: scale(1.0, 1.0);
   }
 
-  50% {
-    transform: scale(1.5, 1.5); /* Enlarges the picture */
+  100% {
+    transform: scale(1.4, 1.4);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.4, 1.4);
   }
 
   100% {
@@ -578,9 +595,9 @@ ul {
 /* Materialize-grids */
 .col.s6 {
   padding: 0px;
-  animation: fadein 1s 1;
+  animation: zoomOut 1s 1;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  animation-timing-function: cubic-bezier(.54,.65,0,2.06);
   cursor: pointer;
   margin-top: 5%;
 }
@@ -592,6 +609,8 @@ ul {
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  animation: zoomOut 1s 1;
+  animation-fill-mode: forwards;
 }
 
 .row .col.s6  {
