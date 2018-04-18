@@ -90,18 +90,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.logo1 {
-  width: 4rem;
-  box-sizing: border-box;
-  position: fixed;
-  margin-top: 3%;
-}
-
-.logo1:hover {
-  transform: scale(1.6);
-  width: 40%;
-}
-
 #fighter1 {
   background-color: pink;
   padding: 0px;

@@ -1,59 +1,57 @@
-# Politweets riktlinjer för kod
+# Politweets coding guidelines.
 
 [TOC]
 
 
+### General guidelines for all programming-languages.
 
-### Gemensamma regler för samtliga språk
-
-* Indentering görs med tabbar, ej mellanslag.
-* Teckenkodning på samtliga dokument skall vara UTF-8.
-* Filnamn får enbart ha små bokstäver och flera ord separeras med understreck.
-* Tomma rader får ej innehålla mellanslag.
-* Det får inte finnas mellanslag i slutet av kodrader.
-* Kommentarer i koden skall sträva mot att beskriva **syftet** med kodbiten.
+* Indentation is always done with tabs, never blankspaces.
+* Character coding on all official documents should be UTF-8.
+* Filenames should only contain lowercase characters and multiple words are separated by underscores.
+* Empty lines should never have blankspaces.
+* Under no circumstances should there be any blankspaces at the end of a line.
+* Comments in the code should always strive to explain the purpose of the code.
 
 
 
 ### JavaScript
 
-#### Allmänna regler
+#### General Rules
 
-* En indentering är en tab.
-* En tab-size är 2 spaces.
-* Alla kodfiler med JavaScript skall ha filändelsen `.js`.
-* Vid komparation använd **alltid** `===` - **aldrig** `==`.
+* An indentation is always one tab.
+* The size of a tab is two blankspaces.
+* All JavaScript files should have the .js file ending.
+* When making comparisons **always** `===` - **never** `==`.
 
+##### Variables
 
+Always use `const` or `let`to declare variables. Use `const` as a standard when the variables are static. Use `let` when the variables are dynamic. `Var` should never be used.
 
-##### Variabler
+#### Name
 
-Använd alltid `const` eller `let` för att deklarera variabler. Använd `const` som standard såvida datan i variabeln inte behöver förändras - då används `let`.
-`var` får ej användas.
-
-#### Namn
-
-##### Variabler
+##### Variables
 
 Variabler skrivs i camelcase. Börjar med liten bokstav och mer än ett ord separeras med stor bokstav.
 
-```javascript
-// Rätt
-const variabel = "ja tack";
-const variabelNamn = "ja tack";
+Variables should be written in camelcase. Start the name with a lowercase letter and separate words with an uppercase letter.
 
-// Fel
-const variabelnamn = "nej tack";
+```javascript
+// Correct
+const variable = "yes please";
+const variableName ="yes please";
+
+// Wrong
+const variablename = "no thanks";
 ```
 
 
 
-##### Funktioner
+##### Functions
 
-Funktioner skrivs i camelcase. Börjar med liten bokstav och mer än ett ord separeras med stor bokstav.
+Functions should always be written in camelcase. Start with a lowercase letter and separate words with an uppercase letter.
 
 ```javascript
-// Rätt
+// Correct
 function funky() {
 	...
 }
@@ -62,7 +60,7 @@ function funkyFunction() {
 	...
 }
 
-// Fel
+// Wrong
 function funkyfunction() {
 	...
 }
@@ -70,50 +68,49 @@ function funkyfunction() {
 
 
 
-#### Formattering
+#### Formatting
 
-##### Allmänt
+##### General
 
-* Strängar anges med `""` och inte `''`.
+* Strings should be declared with `""` and not `'`.
 
 
+##### Variables
 
-##### Variabler
-
-Variabler deklareras med ett mellanslag före och efter `=`.
+Variables are declared with a blankspace before and after the `=`.
 
 ```javascript
-// Rätt
+// Correct
 const poli = "tweet";
 
-// Fel
+// Wrong
 const poli="tweet";
 ```
 
 
 
-##### Funktioner
+##### Functions
 
-Kod som körs i funktioner skall börja indenterat på raden under funktionsdeklarationen och avslutande curly-bracket skall vara på en egen rad.
+Code which runs in functions should always start indented on the row below the function declaration and ending curly-brace should be on a separate row.
 
 ```javascript
-// Rätt
+// Correct
 function funkyFunction() {
 	...
 }
 
-// Fel
+// Wrong
 function funkyFunction() {...}
 ```
 
 
 
-##### Operationer
+##### Operators
 
-Mellanrum skall finnas före och efter operanden.
+Blankspaces should be present before and after the operator.
 
 ```javascript
-// Rätt
+// Correct
 x = 5 * 1;
 ```
 
@@ -122,27 +119,28 @@ x = 5 * 1;
 ##### Arrays
 
 När man anger värden till en array skall det göras med ett komma och mellanslag efter.
+When you declare values to an array it should always be done with a comma and a blankspace afterwards.
 
 ```javascript
-// Rätt
-politiker = ["Bildt", "Putin", "EBThor"];
+// Correct
+politicians = ["Bildt", "Putin", "EBThor"];
 ```
 
 
 
-##### Objekt
+##### Objects
 
-Objekts egenskaper skrivs indenterat och max en egenskap per rad.
+An objects attributes should be indented with a maximum of one attribute per row.
 
 ```javascript
-// Fel
+// Wrong
 const obj {
-id: 1,name: "Stockholm", isGreat: false}
+id: 1,name: "Malmö", isGreat: false}
 
-// Rätt
+// Correct
 const obj {
 	id: 2,
-	name: "Göteborg",
+	name: "Helsingborg",
 	isGreat: true
 }
 ```
@@ -151,35 +149,35 @@ const obj {
 
 ##### Kommentarer
 
-* Använd `/** … **/` för multi-line kommentarer. Kommentaren skall omfamnas av `/** … **/`.
+* Use `/** … **/` for multi-line comments.
 
 ```javascript
-// Rätt
+// Correct
 /**
-Såhär
-skriver man
-kommentarer på flera
-rader
+This is
+how you write
+comments on multiple
+lines
 **/
 
-// Fel
-/** Skriv ej såhär **/
+// Wrong
+/** Dont write like this. **/
 
-// Fel
-// Såhär
-// skriver man absolut
-// inte kommentarer
-// på flera rader
+// Wrong
+// this
+// is not how you
+// write comments
+// on multiple lines.
 ```
 
-* Använd `//…` för singel-line kommentarer
+* Use `//…` for single-line comments.
 
 ```javascript
-// Rätt
+// Correct
 // Do I love hummus?
 const iLoveHummus = true;
 
-// Fel
+// Wrong
 const iLoveHummus = true; // Do I love hummus?
 ```
 
@@ -197,7 +195,13 @@ const iLoveHummus = true; // Do I love hummus?
 * Closing } på ny rad
 * Blankrad mellan varje deklaration
 
-#### Dåligt
+* When we use more than one selector every selector gets its own line.
+* Blankspaces before the opening curly-brace.
+* Use a blankspaces before the comma and never before the comma.
+* Closing curly-brace on a new line.
+* Blankspaces between every declaration.
+
+#### Bad
 ```CSS
 .avatar{
     border-radius:50%;
@@ -210,7 +214,7 @@ const iLoveHummus = true; // Do I love hummus?
 }
 ```
 
-#### Bra
+#### Good
 ```CSS
 .avatar {
   border-radius: 50%;
@@ -224,5 +228,4 @@ const iLoveHummus = true; // Do I love hummus?
 }
 ```
 
-* % istället för px.
-* 0; istället för none;
+* 0; instead of none;

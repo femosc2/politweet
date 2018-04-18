@@ -4,10 +4,10 @@
     $(function () {
 
         //initialize all implemented materialize modals on the page.
-        $('.modal').modal();
+        $(".modal").modal();
 
         //Here it activiates mondals by click on trigger
-        $('.trigger-modal').modal();
+        $(".trigger-modal").modal();
 
     }
   );
