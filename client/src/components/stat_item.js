@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 /*
 When the user selects a fighter this component renders a
@@ -14,7 +14,7 @@ class StatItem extends Component {
     // Chooses the JSON file for the selected fighter
     const statItem = require("../../tweets/" + this.props.selectedFighter + ".json");
 
-    // TODO make a list instead of a bunch of const's
+    // TODO make a list instead of a bunch of const"s
     const image = statItem.image;
     const name = statItem.name;
     const description = statItem.description;

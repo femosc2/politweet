@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import StatItem from './stat_item';
+import React, { Component } from "react";
+import StatItem from "./stat_item";
 
 // Renders a div containing the StatItems
 
