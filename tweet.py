@@ -57,7 +57,7 @@ def writeTweetsToJson(screen_name):
         print strftime("%a, %d %b %Y %H:%M:%S", gmtime())
 
     #Dump all the tweets to a JSON file.
-    file = open(screen_name + "tweets.json", 'wb')
+    file = open(screen_name + "tweets.json", "wb")
     print "Creating a JSON File...."
     for status in alltweets:
         json.dump(status._json,file, sort_keys = True, indent = 4)
@@ -67,7 +67,7 @@ def writeTweetsToJson(screen_name):
     print "_" * 40
     file.close()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     #Write what twitter profiles tweets you want to download (CASE SENSITIVE), if you enter a name of a profile you already have the old file will be overwritten.
     while True:
         writeTweetsToJson("@jimmieakesson")

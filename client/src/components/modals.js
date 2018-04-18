@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 /*
 Boilerplate with static data for the leaderboard- and about buttons.

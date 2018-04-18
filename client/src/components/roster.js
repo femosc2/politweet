@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import RosterProfile from "./roster_profile";
 
 // This component is a container for all the RosterProfile (fighters).
