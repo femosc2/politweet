@@ -12,10 +12,10 @@ from time import gmtime, strftime, sleep
 
 
 #Twitter API credentials Get your own API credentials @ apps.twitter.com
-consumer_key = "9fdjDcnEUV4db6fjfUdEjXQAY"
-consumer_secret = "lQcCAvN3rFhiArOquAiBgtMUZu8O3ept0ZezXtWiVupwSWkGXd"
-access_key = "318449791-OUeKzhbSdbQzcy29bK3nkjAqqfEHxHFY9teugrYY"
-access_secret = "qOnRIANIw0mXj51CORPs4ePqlwkfRh80vudbTGqyLe9Jt"
+consumer_key = "*"
+consumer_secret = "*"
+access_key = "*"
+access_secret = "*"
 
 
 def writeTweetsToJson(screen_name):

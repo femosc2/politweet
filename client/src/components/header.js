@@ -5,11 +5,15 @@ class Header extends Component {
     return (
       <div>
         <img className="headerImage" src="style/images/calle.jpg" alt="Carl Bildt" />
-        <div classname="headerH1">
+        <div className="headerH1">
           <h1>Politweet</h1>
         </div>
 
+<<<<<<< HEAD
         <div classname="headerH2">
+=======
+        <div className="headerH2">
+>>>>>>> 1edd9c6f3d34e35f6bfe5f255318821d65bc61e8
           <h2>Choose your fighters</h2>
         </div>
       </div>
