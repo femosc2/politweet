@@ -8,8 +8,6 @@ list of the JSON data of the chosen fighter.
 
 class StatItem extends Component {
   render() {
-
-<<<<<<< HEAD
   if (this.props.selectedFighter === null) {
     return (<div id="hiddenLoading">Loading</div>)
   }
@@ -44,7 +42,7 @@ class StatItem extends Component {
         <div className="statItem"> {accCreation} </div>
         <div className="statItem"> {wordCount} </div>
       </li>
-=======
+
     if (this.props.selectedFighter === null) {
       return (<div id="hiddenLoading">Loading</div>)
     }
@@ -79,7 +77,7 @@ class StatItem extends Component {
           <div className="statItem"> {accCreation} </div>
           <div className="statItem"> {wordCount} </div>
         </li>
->>>>>>> 1edd9c6f3d34e35f6bfe5f255318821d65bc61e8
+
     );
   }
 }
