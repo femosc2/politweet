@@ -16,8 +16,8 @@ class Modals extends Component {
             <div id="modal1" class="modal">
               <div class="modal-content">
                 <h4 class="modalHeader">About</h4>
-                <p>Ett gäng goa'gubbar bestående av: Victor Blixten Persson, Felinux von krach Morau,
-                John Nav Iversen, Adam Blackbeard Danklord Hermansson samt Adam musförgöraren Nilsson</p>
+                <p>Ett gäng goa'gubbar bestående av: Victor Persson, Felinux Morau,
+                John Iversen, Adam Hermansson samt Adam Nilsson</p>
               </div>
               <div class="modal-footer">
                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>

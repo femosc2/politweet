@@ -11,21 +11,23 @@ import "./index.css";
 class App extends Component {
   constructor() {
     super();
-/*
-Creates a state where no fighter is selected on page load,
-meaning: No stats will show until the user selects a fighter.
-*/
+    /*
+    Creates a state where no fighter is selected on page load,
+    meaning: No stats will show until the user selects a fighter.
+    */
     this.state = {
       selectedFighter: []
     };
-// Gives selectFighter access to state.
+
+    // Gives selectFighter access to state.
     this.selectFighter = this.selectFighter.bind(this);
 
   }
-/*
-Shows fighter stats on user click, depending on which fighter
-the user selected. Logs result to the browser console.
-*/
+
+  /*
+  Shows fighter stats on user click, depending on which fighter
+  the user selected. Logs result to the browser console.
+  */
   selectFighter(fighterId) {
     if (this.state.selectedFighter.length < 2) {
       this.state.selectedFighter.push(fighterId);
@@ -37,7 +39,7 @@ the user selected. Logs result to the browser console.
     }
   }
 
-// Renders the different components imported above and returns them to ReactDOM below.
+  // Renders the different components imported above and returns them to ReactDOM below.
   render() {
       return (
         <div>

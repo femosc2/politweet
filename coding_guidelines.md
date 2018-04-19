@@ -66,7 +66,21 @@ function funkyfunction() {
 }
 ```
 
+##### Anonymous functions
 
+Anonymous functions are written with arrow functins, a.k.a fat arrows.
+
+```javascript
+// Correct
+() => {
+	...
+}
+
+// Wrong
+function() {
+	...
+}
+```
 
 #### Formatting
 
@@ -149,16 +163,16 @@ const obj {
 
 ##### Kommentarer
 
-* Use `/** … **/` for multi-line comments.
+* Use `/* … */` for multi-line comments.
 
 ```javascript
 // Correct
-/**
+/*
 This is
 how you write
 comments on multiple
 lines
-**/
+*/
 
 // Wrong
 /** Dont write like this. **/
@@ -201,7 +215,7 @@ const iLoveHummus = true; // Do I love hummus?
 * Closing curly-brace on a new line.
 * Blankspaces between every declaration.
 
-#### Bad
+#### Wrong
 ```CSS
 .avatar{
     border-radius:50%;
