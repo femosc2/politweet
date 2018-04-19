@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <div>
+      <header>
         <img className="headerImage" src="style/images/calle.jpg" alt="Carl Bildt" />
         <div className="headerH1">
           <h1>Politweet</h1>
@@ -13,7 +13,7 @@ class Header extends Component {
 
           <h2>Choose your fighters</h2>
         </div>
-      </div>
+      </header>
     );
   }
 }
