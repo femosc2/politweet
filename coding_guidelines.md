@@ -149,16 +149,16 @@ const obj {
 
 ##### Kommentarer
 
-* Use `/** … **/` for multi-line comments.
+* Use `/* … */` for multi-line comments.
 
 ```javascript
 // Correct
-/**
+/*
 This is
 how you write
 comments on multiple
 lines
-**/
+*/
 
 // Wrong
 /** Dont write like this. **/
