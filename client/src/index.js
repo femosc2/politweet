@@ -6,6 +6,7 @@ import Modals from "./components/modals";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
 import FightButton from "./components/fight_button";
+import "./index.css";
 
 class App extends Component {
   constructor() {

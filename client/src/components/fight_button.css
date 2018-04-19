@@ -1,0 +1,35 @@
+.waves-effect.waves-light.btn-large {
+  width: 30%;
+  background-color: #42a5f5;
+  animation: slideInBottom 8s;
+  animation-fill-mode: forwards;
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  padding: 0px;
+  margin-top: 3%;
+  margin-bottom: 10px;
+}
+
+/* Animations used */
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

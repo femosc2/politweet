@@ -5,7 +5,7 @@ body {
 }
 
 p {
-  z-index: 999 !important;
+  z-index: 999;
 }
 
 .container {

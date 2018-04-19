@@ -1,0 +1,33 @@
+.statItem {
+  text-align: center;
+  margin: 0 auto;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.statItem p {
+  text-align: center;
+  margin: 0 auto;
+  animation: fadeIn 2s 1;
+}
+
+ul {
+  text-align: center;
+}
+
+#statList {
+  width: 33%;
+  z-index: -3;
+  margin: 0 auto;
+}
+
+/* Animations used */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

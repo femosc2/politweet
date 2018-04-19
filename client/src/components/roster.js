@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import RosterProfile from "./roster_profile";
+import "./roster.css"
 
 // This component is a container for all the RosterProfile (fighters).
 class Roster extends Component {

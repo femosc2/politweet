@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StatItem from "./stat_item";
+import "./stat_container.css";
 
 // Renders a div containing the StatItems
 

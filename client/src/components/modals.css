@@ -1,0 +1,45 @@
+.btn {
+  background-color: #42a5f5;
+ }
+
+.modal-content {
+  background-color: #fff;
+}
+
+.modal-footer {
+  background-color: #90caf9 !important;
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.modalButton {
+  width: 100%;
+  position: fixed;
+  animation: slideInRight 1.6s 1, fadeIn 1.6s 1;
+  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+  margin-top: 5%;
+  animation-delay: 5.7s;
+}
+
+/* Animations */
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    }
+  }

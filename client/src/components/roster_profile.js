@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./roster_profile.css";
 
 /* This component creates a fighter */
 

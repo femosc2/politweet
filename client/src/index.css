@@ -1,0 +1,118 @@
+body {
+  background-color: #070707;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px;
+  width: 30%;
+  background-color: rgba(255,255,255,0.5);
+  animation: slideInBottom 8s;
+  animation-fill-mode: forwards;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  /* Centers an element with position:fixed */
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* End of centering */
+  margin-top: 5%;
+}
+
+.wrapper {
+  animation: fadeIn 6s 1;
+  background-image: url("rosenbad.jpg");
+  height: 1200px;
+  animation-fill-mode: forwards;
+  margin-top: -3%;
+}
+
+#hiddenLoading {
+  display: none;
+}
+
+.col.s6 {
+  padding: 0px;
+  animation: zoomOut 1s 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.54,.65,0,2.06);
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.row .col.s6  {
+  margin: 5%;
+  width: 30%;
+  margin-top: 5%;
+  cursor: pointer;
+  margin-left: 11.5%;
+}
+
+.footer {
+  animation: slideInBottom 6s 1;
+  animation-fill-mode: forwards;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  height: 50px;
+  background-color: rgba(255,255,255, 0.8);
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Animations used */
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.4, 1.4);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
