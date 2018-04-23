@@ -1,48 +1,56 @@
 
 #fighter1 {
-  background-color: pink;
+  background-image: url("/style/images/centern.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter2 {
-  background-color: black;
+  background-image: url("/style/images/sossesvin.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter3 {
-  background-color: blue;
+  background-image: url("/style/images/moderaterna.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter4 {
-  background-color: red;
+  background-image: url("/style/images/vänstern.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter5 {
-  background-color: green;
+  background-image: url("/style/images/sd.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter6 {
-  background-color: yellow;
+  background-image: url("/style/images/liberalerna.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter7 {
-  background-color: cyan;
+  background-image: url("/style/images/kd.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
 
 #fighter8 {
-  background-color: orange;
+  background-image: url("/style/images/miljöpartietislamisterna.png");
+  background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
 }
