@@ -30,7 +30,7 @@ class App extends Component {
   */
   selectFighter(fighterId) {
     if (this.state.selectedFighter.length < 2) {
-      this.setState({ selectedFighter: [...this.state.selectedFighter, fighterId] })
+      this.setState({selectedFighter: [...this.state.selectedFighter, fighterId]})
     }
 
 
@@ -49,7 +49,7 @@ class App extends Component {
           <Modals />
 
           { this.state.selectedFighter.map(fighterId => {
-            return <StatContainer selectedFighter={fighterId} />
+            return <StatContainer selectedFighter={fighterId} className={this.state.selectedFighter.indexOf(fighterId)}/>
           })
           }
 
