@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./modals.css";
+import "../styles/modals.css";
 
 /*
 Boilerplate with static data for the leaderboard- and about buttons.
