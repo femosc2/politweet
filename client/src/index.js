@@ -30,9 +30,9 @@ class App extends Component {
   */
   selectFighter(fighterId) {
     if (this.state.selectedFighter.length < 2) {
-      this.state.selectedFighter.push(fighterId);
-      this.setState({selectedFighter: [fighterId]});
+      this.setState({ selectedFighter: [...this.state.selectedFighter, fighterId] })
     }
+
 
     if (this.state.selectedFighter.length > 2) {
       // TODO show errormessage about arr being full.
