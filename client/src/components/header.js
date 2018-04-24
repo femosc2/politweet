@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <img className="headerImage" src="/images/calle.jpg" alt="Carl Bildt" />
+        <img className="headerImage" src="/images/headerTest.png" alt="Carl Bildt" />
         <div className="headerH1">
           <h1>Politweet</h1>
         </div>

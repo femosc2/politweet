@@ -1,6 +1,7 @@
 body {
   background-color: #070707;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+  background-image: url("/images/background.png");
   font-weight: 100;
 }
 
@@ -8,7 +9,7 @@ body {
   margin: 0 auto;
   padding: 0px;
   width: 30%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.8);
   animation: slideInBottom 4s;
   animation-fill-mode: forwards;
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
@@ -26,6 +27,7 @@ body {
 
 .wrapper {
   animation: fadeIn 3s 1;
+  background-image: url("/styles/images/background.png");
   height: 1200px;
   animation-fill-mode: forwards;
   margin-top: -3%;
