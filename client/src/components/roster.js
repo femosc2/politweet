@@ -10,48 +10,48 @@ class Roster extends Component {
       <div className="row">
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/bae.png" id="fighter1" alt="Annie Lööf"
+        img="images/bae.png" id="fighter1" alt="Annie Lööf"
         />
 
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/stefan.png" id="fighter2" alt="Stefan Löfven"
-        />
-      </div>
-
-      <div className="row">
-        <RosterProfile
-          selectFighter={this.props.selectFighter}
-          img="style/images/calleBILDT.png" id="fighter3" alt="Carl Bildt"
-        />
-
-        <RosterProfile
-          selectFighter={this.props.selectFighter}
-          img="style/images/yungJonas.png" id="fighter4" alt="Jonas Sjöstedt"
+          img="images/stefan.png" id="fighter2" alt="Stefan Löfven"
         />
       </div>
 
       <div className="row">
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/jimmie.png" id="fighter5" alt="Jimmie Åkesson"
+          img="images/calleBILDT.png" id="fighter3" alt="Carl Bildt"
         />
 
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/Janbjörklund.png" id="fighter6" alt="Jan Björklund"
+          img="images/yungJonas.png" id="fighter4" alt="Jonas Sjöstedt"
         />
       </div>
 
       <div className="row">
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/ebbis.png" id="fighter7" alt="Ebba Busch Thor"
+          img="images/jimmie.png" id="fighter5" alt="Jimmie Åkesson"
         />
 
         <RosterProfile
           selectFighter={this.props.selectFighter}
-          img="style/images/isabellaLÖVIN.png" id="fighter8" alt="Isabella Lövin"
+          img="images/Janbjörklund.png" id="fighter6" alt="Jan Björklund"
+        />
+      </div>
+
+      <div className="row">
+        <RosterProfile
+          selectFighter={this.props.selectFighter}
+          img="images/ebbis.png" id="fighter7" alt="Ebba Busch Thor"
+        />
+
+        <RosterProfile
+          selectFighter={this.props.selectFighter}
+          img="images/isabellaLÖVIN.png" id="fighter8" alt="Isabella Lövin"
         />
       </div>
     </div>
