@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./fight_button.css"
+import "../styles/fight_button.css"
 
 class FightButton extends Component {
   render() {

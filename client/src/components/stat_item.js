@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./stat_item.css";
+import "../styles/stat_item.css";
 
 /*
 When the user selects a fighter this component renders a
