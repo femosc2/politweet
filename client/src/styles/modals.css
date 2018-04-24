@@ -23,6 +23,10 @@
   animation-delay: 5.7s;
 }
 
+.waves-ripple {
+  display: none;
+}
+
 /* Animations */
 
 @keyframes slideInRight {
