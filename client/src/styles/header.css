@@ -26,7 +26,7 @@
   z-index: 100;
   position: fixed;
   margin-top: -3%;
-  animation: slideInTopAndSlideOutTop 8s 1;
+  animation: slideInTopAndSlideOutTop 4s 1;
   animation-fill-mode: forwards;
 }
 
@@ -40,7 +40,7 @@ h1 {
   position: fixed;
   top: 25%;
   left: 40%;
-  animation: slideInRightAndSlideOutLeft 7s 1;
+  animation: slideInRightAndSlideOutLeft 3s 1;
   animation-delay: 1s;
   animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-fill-mode: forwards;
@@ -54,7 +54,7 @@ h2 {
   position: fixed;
   top: 35%;
   left: 40%;
-  animation: slideInLeftAndSlideOutRight 7s 1;
+  animation: slideInLeftAndSlideOutRight 3s 1;
   /* The curve of which the animation animates */
   animation-timing-function: cubic-bezier(.1,1.01,1,.56);
   animation-delay: 1s;

@@ -1,7 +1,7 @@
 .waves-effect.waves-light.btn-large {
   width: 30%;
   background-color: #42a5f5;
-  animation: slideInBottom 8s;
+  animation: slideInBottom 4s;
   animation-fill-mode: forwards;
   z-index: 3;
   position: fixed;
