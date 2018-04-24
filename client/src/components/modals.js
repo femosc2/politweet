@@ -11,25 +11,25 @@ class Modals extends Component {
     return (
       <div className="modalBox">
         <ul className="modalButton">
-          <ul id="nav-mobile" class="right">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">About</a>
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4 class="modalHeader">About</h4>
+          <ul id="nav-mobile" className="right">
+            <a className="waves-effect waves-light btn modal-trigger" href="#modal1">About</a>
+            <div id="modal1" className="modal">
+              <div className="modal-content">
+                <h4 className="modalHeader">About</h4>
                 <p>Ett gäng goa'gubbar bestående av: Victor Persson, Felinux Morau,
                 John Iversen, Adam Hermansson samt Adam Nilsson</p>
               </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              <div className="modal-footer">
+                <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
               </div>
             </div>
           </ul>
 
-          <ul id="nav-mobile" class="right">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Leaderboard</a>
-            <div id="modal2" class="modal">
-              <div class="modal-content">
-                <h4 class="modalHeader">Leaderboard</h4>
+          <ul id="nav-mobile" className="right">
+            <a className="waves-effect waves-light btn modal-trigger" href="#modal2">Leaderboard</a>
+            <div id="modal2" className="modal">
+              <div className="modal-content">
+                <h4 className="modalHeader">Leaderboard</h4>
                 <p>Kristina är bezt, ingen protest</p>
                 <table>
                   <thead>
@@ -59,8 +59,8 @@ class Modals extends Component {
                   </tbody>
                 </table>
               </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              <div className="modal-footer">
+                <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
               </div>
             </div>
           </ul>
