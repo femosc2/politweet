@@ -36,7 +36,7 @@ class Modals extends Component {
                     <tr>
                       <th>Namn</th>
                       <th>Plats</th>
-                      <th>Procent winz</th>
+                      <th>Procent win</th>
                     </tr>
                   </thead>
 
