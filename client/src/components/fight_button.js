@@ -5,7 +5,7 @@ class FightButton extends Component {
   render() {
     const buttonText = this.props.buttonText;
     return (
-      <a class="waves-effect waves-light btn-large"> {buttonText} </a>
+      <a className="waves-effect waves-light btn-large"> {buttonText} </a>
     );
   }
 }
