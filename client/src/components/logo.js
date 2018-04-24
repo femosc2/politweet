@@ -5,7 +5,7 @@ class Logo extends Component {
   render() {
     return (
       <div>
-        <img className="logo1" alt="Tempo tax logga" src="../styles/images/logo_1.png" />
+        <img className="logo1" alt="Tempo tax logga" src="../src/logo_1.png" />
       </div>
     );
   }
