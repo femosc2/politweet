@@ -26,7 +26,6 @@ body {
 
 .wrapper {
   animation: fadeIn 6s 1;
-  background-image: url("rosenbad.jpg");
   height: 1200px;
   animation-fill-mode: forwards;
   margin-top: -3%;
