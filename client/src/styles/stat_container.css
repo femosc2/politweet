@@ -43,6 +43,7 @@
   margin-top: 10%;
   margin-right: 2%;
   animation: slideInLeft 1s;
+  animation-timing-function: cubic-bezier(.54,.65,0,1.5);
   animation-fill-mode: forwards;
 }
 
