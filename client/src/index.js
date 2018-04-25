@@ -29,7 +29,7 @@ class App extends Component {
   the user selected. Logs result to the browser console.
   */
   selectFighter(fighterId) {
-    if (this.state.selectedFighter.length < 2) {
+    if (this.state.selectedFighter.length < 2 && this.state.selectedFighter.lastIndexOf(fighterId)) {
       this.setState({selectedFighter: [...this.state.selectedFighter, fighterId]})
     }
 
