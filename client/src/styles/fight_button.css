@@ -16,16 +16,12 @@
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-
-
-=======
 .btn-large:hover {
   -webkit-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
    -moz-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
    box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
 }
->>>>>>> bdca8e850d39859f1571afd069111462ff4c48df
+
 /* Animations used */
 
 @keyframes slideInBottom {
