@@ -7,7 +7,7 @@ import "../styles/stat_container.css";
 class StatContainer extends Component {
   render() {
   return (
-      <div className="theStatListContainer">
+      <div className="theStatListContainer" id={this.props.id}>
         <ul>
           <StatItem selectedFighter={this.props.selectedFighter}/>
         </ul>

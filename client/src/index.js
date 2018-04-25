@@ -49,7 +49,7 @@ class App extends Component {
           <Modals />
 
           { this.state.selectedFighter.map(fighterId => {
-            return <StatContainer selectedFighter={fighterId} className={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
+            return <StatContainer selectedFighter={fighterId} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
                    />
           })
           }
