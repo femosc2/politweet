@@ -10,12 +10,11 @@ body {
   margin: 0 auto;
   padding: 0px;
   width: 30%;
-  background-color: rgba(0,0,0,0.5);
   animation: slideInBottom 4s;
   animation-fill-mode: forwards;
-  -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  /*-webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);*/
   /* Centers an element with position:fixed */
   position: fixed;
   z-index: 0;
