@@ -1,4 +1,4 @@
-.waves-effect.waves-light.btn-large {
+.btn-large {
   width: 30%;
   background-color: #42a5f5;
   animation: slideInBottom 4s;
@@ -12,9 +12,11 @@
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   padding: 0px;
-  margin-top: 3%;
+  margin-top: 0%;
   margin-bottom: 10px;
 }
+
+
 
 /* Animations used */
 
@@ -33,3 +35,12 @@
     transform: translateY(0%);
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    }
+  }
