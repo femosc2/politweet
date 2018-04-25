@@ -37,6 +37,8 @@ body {
   display: none;
 }
 
+/*
+
 .col.s6 {
   padding: 0px;
   animation: zoomOut 1s 1;
@@ -53,6 +55,8 @@ body {
   cursor: pointer;
   margin-left: 11.5%;
 }
+
+*/ 
 /* Animations used */
 
 @keyframes zoomOut {
