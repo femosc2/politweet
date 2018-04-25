@@ -85,14 +85,6 @@ body {
   cursor: pointer;
   margin-top: 5%;
 }
-
-.row .col.s6  {
-  margin: 5%;
-  width: 30%;
-  margin-top: 5%;
-  cursor: pointer;
-  margin-left: 11.5%;
-}
 /* Animations used */
 
 @keyframes zoomOut {
