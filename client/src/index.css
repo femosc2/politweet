@@ -3,6 +3,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
   background-image: url("/images/background.png");
   font-weight: 100;
+  position: fixed;
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
   right: 0;
   margin: 0 auto;
   /* End of centering */
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .statContainer0 {
@@ -89,7 +90,7 @@ body {
 
 @keyframes zoomOut {
   0% {
-    transform: scale(1.4, 1.4);
+    transform: scale(1.1, 1.1);
   }
 
   100% {
