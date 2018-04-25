@@ -1,6 +1,6 @@
 .btn-large {
   width: 30%;
-  background-color: #42a5f5;
+  background-color: rgba(89, 255, 210, 0.8);
   animation: slideInBottom 4s;
   animation-fill-mode: forwards;
   z-index: 3;
@@ -16,6 +16,11 @@
   margin-bottom: 10px;
 }
 
+.btn-large:hover {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+   -moz-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+   box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+}
 /* Animations used */
 
 @keyframes slideInBottom {
