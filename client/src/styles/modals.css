@@ -16,16 +16,12 @@
 }
 
 .modal-footer {
-  background-color: #90caf9 !important;
+  background-color: #a365bc !important;
   z-index: 400;
 }
 
 .right {
   margin-right: 10px;
-}
-
-#modal3 {
-  z-index: 9999;
 }
 
 .modalButton {
