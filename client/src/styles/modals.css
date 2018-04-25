@@ -1,5 +1,7 @@
 .btn {
   background-color: rgba(89, 255, 210, 0.8);
+  height: 50px;
+  text-align: center;
  }
 
  .btn:hover {
@@ -31,7 +33,8 @@
   position: fixed;
   animation: slideInRight 4s 1, fadeIn 4s 1;
   animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
-  margin-top: 5%;
+  margin-top: 0.5%;
+  text-align: center;
 }
 
 .waves-ripple {
