@@ -53,7 +53,6 @@
   background-size: 150px 150px;
   padding: 0px;
   border-radius: 50%;
-
 }
 
 .selectFighter {
@@ -77,12 +76,17 @@
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   animation: zoomOut 1s 1;
   animation-fill-mode: forwards;
-  margin:0 auto;
-  display:block;
+  margin: 0 auto;
+  display: block;
 }
 
-.col.s6:active,
 .col.s6:hover {
+  animation: zoomIn 0.5s 1 cubic-bezier(.54,.65,0,2.06), flashing 3.5s infinite;
+  animation-fill-mode: forwards;
+}
+
+.col.s6:focus {
+  background-color: green;
   animation: zoomIn 0.5s 1 cubic-bezier(.54,.65,0,2.06), flashing 3.5s infinite;
   animation-fill-mode: forwards;
 }
@@ -108,7 +112,7 @@
   }
 
   100% {
-    transform: scale(1.4, 1.4);
+    transform: scale(1.25, 1.25);
   }
 }
 

@@ -7,9 +7,9 @@
   animation-fill-mode: forwards;
 }
 
-.theStatListContainer {
+#statContainer0 {
   z-index: -5;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.5);
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
@@ -20,16 +20,17 @@
   right: 0;
   margin: 0 auto;
 /* End of centering */
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 2%;
   animation: slideInRight 1s;
   animation-timing-function: cubic-bezier(.54,.65,0,1.5);
   animation-fill-mode: forwards;
+  color: #fff;
 }
 
-.theStatListContainer2 {
+#statContainer1 {
   z-index: -5;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.5);
   -webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
@@ -40,10 +41,12 @@
   right: 0;
   margin: 0 auto;
   /* End of centering */
-  margin-top: 5%;
+  margin-top: 10%;
   margin-right: 2%;
   animation: slideInLeft 1s;
+  animation-timing-function: cubic-bezier(.54,.65,0,1.5);
   animation-fill-mode: forwards;
+  color: #fff;
 }
 
 /* Animations used */
