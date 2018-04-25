@@ -43,7 +43,6 @@ class App extends Component {
   render() {
       return (
         <div>
-          <FightButton />
           <Roster selectFighter={this.selectFighter} />
           <Header />
           <Modals />
