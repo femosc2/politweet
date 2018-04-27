@@ -31,11 +31,9 @@
 }
 
 h1 {
-  margin-top: -170px;
   text-transform: uppercase;
-  font-family: 'Dawning of a New Day', cursive;
-  font-size: 85px;
-  letter-spacing: 50px;
+  font-size: 65px;
+  letter-spacing: 30px;
   opacity: 0;
   text-align: center;
   color: #fff;
