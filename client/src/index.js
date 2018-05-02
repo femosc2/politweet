@@ -21,7 +21,6 @@ class App extends Component {
 
     // Gives selectFighter access to state.
     this.selectFighter = this.selectFighter.bind(this);
-
   }
 
   /*
