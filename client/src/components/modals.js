@@ -30,7 +30,6 @@ class Modals extends Component {
             <div id="modal2" className="modal">
               <div className="modal-content">
                 <h4 className="modalHeader">Leaderboard</h4>
-                <p>Kristina är bezt, ingen protest</p>
                 <table>
                   <thead>
                     <tr>
