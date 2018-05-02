@@ -11,7 +11,6 @@ class Header extends Component {
         </div>
 
         <div className="headerH2">
-
           <h2>Choose your fighters</h2>
         </div>
       </header>
