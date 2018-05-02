@@ -59,6 +59,7 @@ class Modals extends Component {
                   </tbody>
                 </table>
               </div>
+
               <div className="modal-footer">
                 <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
               </div>
