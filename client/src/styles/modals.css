@@ -1,61 +1,61 @@
 .btn {
-  background-color: rgba(89, 255, 210, 0.8);
-  height: 54px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 54px;
+	background-color: rgba(89, 255, 210, 0.8);
+	height: 54px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 54px;
  }
 
  .btn:hover {
-   -webkit-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
-    box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+	 -webkit-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
+		box-shadow: 0px 0px 12px 0px rgba(19,171,158,1);
  }
 
 .modal-content {
-  background-color: #fff;
-  z-index: 400;
+	background-color: #fff;
+	z-index: 400;
 }
 
 .modal-footer {
-  background-color: #a365bc !important;
-  z-index: 400;
+	background-color: #a365bc !important;
+	z-index: 400;
 }
 
 .right {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .modalButton {
-  width: 100%;
-  position: fixed;
-  animation: slideInRight 4s 1, fadeIn 4s 1;
-  animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
-  margin-top: 0.5%;
-  text-align: center;
+	width: 100%;
+	position: fixed;
+	animation: slideInRight 4s 1, fadeIn 4s 1;
+	animation-timing-function: cubic-bezier(.57,-0.62,0,1.69);
+	margin-top: 0.5%;
+	text-align: center;
 }
 
 .waves-ripple {
-  display: none;
+	display: none;
 }
 
 /* Animations */
 
 @keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-  }
+	0% {
+		transform: translateX(100%);
+	}
 
-  100% {
-    transform: translateX(0%);
-  }
+	100% {
+		transform: translateX(0%);
+	}
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    }
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		}
+	}

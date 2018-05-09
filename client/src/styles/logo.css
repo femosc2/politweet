@@ -1,21 +1,21 @@
 .logo1 {
-  width: 4rem;
-  box-sizing: border-box;
-  position: fixed;
-  margin-top: 3%;
+	width: 4rem;
+	box-sizing: border-box;
+	position: fixed;
+	margin-top: 3%;
 }
 
 .logo1:hover {
-  transform: scale(1.6);
-  width: 40%;
-  animation: spin 0.2s infinite;
+	transform: scale(1.6);
+	width: 40%;
+	animation: spin 0.2s infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
