@@ -31,8 +31,6 @@ Always use `const` or `let`to declare variables. Use `const` as a standard when 
 
 ##### Variables
 
-Variabler skrivs i camelcase. Börjar med liten bokstav och mer än ett ord separeras med stor bokstav.
-
 Variables should be written in camelcase. Start the name with a lowercase letter and separate words with an uppercase letter.
 
 ```javascript
@@ -161,7 +159,7 @@ const obj {
 
 
 
-##### Kommentarer
+##### Comments
 
 * Use `/* … */` for multi-line comments.
 
@@ -203,12 +201,6 @@ const iLoveHummus = true; // Do I love hummus?
 
 
 ### CSS
-* När vi använder fler än en selector ge varje selector en egen rad.
-* Mellanslag innan öppnings {
-* Använd mellanslag efter, och inte innan, :
-* Closing } på ny rad
-* Blankrad mellan varje deklaration
-
 * When we use more than one selector every selector gets its own line.
 * Blankspaces before the opening curly-brace.
 * Use a blankspaces before the comma and never before the comma.
