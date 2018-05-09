@@ -1,62 +1,56 @@
 # Politweet
 
-**Welcome to the Politweet!** Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues).
+**Welcome to the Politweet!** A simple web application designed to compare swedish politicians based on their Twitter statistics. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues).
 
 ## Usage
 
 ### 1.
 
-Your first step is making sure you have Node.js on your system.
+Make sure that you have Node.js installed on your system.
 
 If you don't, you can download node.js from [nodejs.org](https://nodejs.org/en/).
 
 ### 2.
 
-Your next step is downloading this github-repo. If you are familiar with github, you can clone it. If not, just download the zip-file and extract it to a suitable place.
+Your next step will be to download/clone this Github-repo. If you are familiar with Github, you can clone it. If not, just download the zip-file and extract it to a suitable location.
 
 ### 3.
 
-In your terminal, navigate to politweet/client and type:
+Now head over to your terminal or cmd, navigate to politweet/client and type:
 
-```bash
-npm install
-```
+```bash npm install```
 
-to install all the dependencies.
+This will install all the dependencies required to run the project.
 
 ### 4.
 
-You can now start a local server by typing:
+Run the application by starting a local server with the following command:
 
-```bash
-npm start
-```
+```bash npm start```
 
 ### 5.
 
-The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually.
+The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually in your webbrowser.
 
 
 
 ### Tweepy
 
-#### How to use and install and the Tweepy library using Python2
+#### How to use and install the Tweepy library using Python2
 
 The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue!
 
 #### Windows
 
 1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/).
-2. During the install process make sure you tick the option to get "PIP" as well.
-3. Once python2 with pip is installed, open the cmd and type ```pip install tweepy```.
+2. During the installation process make sure you tick the option to get "PIP" as well.
+3. Once python2 with pip are both installed, open the cmd and type ```pip install tweepy```.
 
 #### Mac
 
 1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/)
-
-
 1. During the install process make sure you tick the option to get "PIP" as well.
-2. Once python2 with pip is installed, open your terminal and type```sudo pip install tweepy```.
+2. Once python2 with pip are both installed, open your terminal and type```sudo pip install tweepy```.
 
 Enter your computers password and press enter *(PW won't visually show in your terminal window, but it's there)*.
 
@@ -68,18 +62,6 @@ Python2.7 comes preinstalled on most Linux distros, if you have removed the pyth
 2. Download/install Python2 with ```sudo apt-get install python```
 3. Download/install PIP through ```apt-get install python-pip```
 4. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
-
-
-
-### How to use Politweet
-
-Politweet is currently in the early stage of development. With our current build, you may download and store selected tweets through your cmd/terminal.
-
-1. Clone/download all files in the Politweet repository.
-2. Fling up your terminal or cmd.
-   @@ -38,6 +33,20 @@ to the bottom of the file in order to specify which twitter profiles you want to
-   and the profiles you specified in the script will be downloaded as JSON files.
-3. You will now see how thousands of tweets are being downloaded, exit the applicaiton with Ctrl + C
 
 
 
