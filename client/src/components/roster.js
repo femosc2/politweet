@@ -10,48 +10,48 @@ class Roster extends Component {
 			<div className="row">
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-				img="images/bae.png" id="fighter1" alt="Annie Lööf"
+				img="images/annie_lööf.png" id="fighter1" alt="Annie Lööf"
 				/>
 
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-					img="images/stefan.png" id="fighter2" alt="Stefan Löfven"
-				/>
-			</div>
-
-			<div className="row">
-				<RosterProfile
-					selectFighter={this.props.selectFighter}
-					img="images/calleBILDT.png" id="fighter3" alt="Carl Bildt"
-				/>
-
-				<RosterProfile
-					selectFighter={this.props.selectFighter}
-					img="images/yungJonas.png" id="fighter4" alt="Jonas Sjöstedt"
+					img="images/stefan_löfven.png" id="fighter2" alt="Stefan Löfven"
 				/>
 			</div>
 
 			<div className="row">
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-					img="images/jimmie.png" id="fighter5" alt="Jimmie Åkesson"
+					img="images/carl_bildt.png" id="fighter3" alt="Carl Bildt"
 				/>
 
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-					img="images/Janbjörklund.png" id="fighter6" alt="Jan Björklund"
+					img="images/jonas_sjöstedt.png" id="fighter4" alt="Jonas Sjöstedt"
 				/>
 			</div>
 
 			<div className="row">
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-					img="images/ebbis.png" id="fighter7" alt="Ebba Busch Thor"
+					img="images/jimmie_åkesson.png" id="fighter5" alt="Jimmie Åkesson"
 				/>
 
 				<RosterProfile
 					selectFighter={this.props.selectFighter}
-					img="images/isabellaLÖVIN.png" id="fighter8" alt="Isabella Lövin"
+					img="images/jan_björklund.png" id="fighter6" alt="Jan Björklund"
+				/>
+			</div>
+
+			<div className="row">
+				<RosterProfile
+					selectFighter={this.props.selectFighter}
+					img="images/ebba_busch_thor.png" id="fighter7" alt="Ebba Busch Thor"
+				/>
+
+				<RosterProfile
+					selectFighter={this.props.selectFighter}
+					img="images/isabella_lövin.png" id="fighter8" alt="Isabella Lövin"
 				/>
 			</div>
 		</div>
