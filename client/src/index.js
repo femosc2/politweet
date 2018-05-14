@@ -6,6 +6,7 @@ import Modals from "./components/modals";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
 import FightButton from "./components/fight_button";
+import ClearStateButton from "./components/clear_state_button";
 import "./index.css";
 
 class App extends Component {
@@ -37,6 +38,20 @@ class App extends Component {
 		}
 	}
 
+	/*
+	A reset function which clears the selectFighter state
+	making it possible to choose two new fighters.
+	*/
+
+	/*
+	resetFighters(reset_button) {
+		clearState() {
+			// kod som tömmer staten
+		}
+
+	}
+	*/
+
 	// Renders the different components imported above and returns them to ReactDOM below.
 	render() {
 			return (
@@ -52,6 +67,7 @@ class App extends Component {
 					}
 
 					<FightButton buttonText="FIGHT!" />
+					<ClearStateButton buttonText="Reset" />
 					<Logo />
 				</div>
 		);

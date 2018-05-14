@@ -56,23 +56,23 @@ class Modals extends Component {
 										<tr>
 											<td>2</td>
 											<td>Stefan Löfven</td>
-										<td>6</td>
-										<td>4</td>
-										<td>60%</td>
+											<td>6</td>
+											<td>4</td>
+											<td>60%</td>
 										</tr>
 										<tr>
 											<td>3</td>
 											<td>Jimmie Åkesson</td>
-										<td>5</td>
-										<td>4</td>
-										<td>55.5%</td>
+											<td>5</td>
+											<td>4</td>
+											<td>55.5%</td>
 										</tr>
 										<tr>
 											<td>4</td>
 											<td>Jonas Sjöstedt</td>
-										<td>3</td>
-										<td>3</td>
-										<td>50%</td>
+											<td>3</td>
+											<td>3</td>
+											<td>50%</td>
 										</tr>
 										<tr>
 											<td>5</td>
