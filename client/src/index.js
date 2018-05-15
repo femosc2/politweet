@@ -48,7 +48,9 @@ class App extends Component {
 
 		clearState() {
 			//kod som tömmer staten
-				this.setState({selectedFighter: []})
+				this.setState({
+					selectedFighter: []
+				})
 	}
 
 
