@@ -1,3 +1,4 @@
 .DS_Store
 api_keys.py
 /client/node_modules
+config.js
