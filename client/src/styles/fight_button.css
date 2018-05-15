@@ -1,5 +1,6 @@
 .btn-large {
-	width: 17%;
+	width: 13%;
+	height: 4%;
 	background-color: rgba(89, 255, 210, 0.8);
 	animation: slideInBottom 2s;
 	animation-fill-mode: forwards;
@@ -12,9 +13,10 @@
 	-moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 	box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 	padding: 0px;
-	margin-top: 40%;
+	margin-top: 53%;
 	margin-bottom: 10px;
-	font-size: 35px;
+	font-size: 20px;
+	line-height: 33px;
 }
 
 .open:focus {
