@@ -13,7 +13,7 @@ class RosterProfile extends Component {
 		const img = this.props.img;
 		const id = this.props.id;
 		const alt = this.props.alt;
-		
+
 		return (
 		<div className="col s6">
 			<img src={img} alt={alt} id={id}

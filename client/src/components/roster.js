@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import RosterProfile from "./roster_profile";
 import "../styles/roster.css"
 
-// This component is a container for all the RosterProfile (fighters).
+// This component is a container for all the RosterProfile(s) (fighters).
 class Roster extends Component {
 	render() {
 	return (

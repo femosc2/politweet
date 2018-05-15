@@ -6,6 +6,7 @@ import Modals from "./components/modals";
 import Logo from "./components/logo";
 import StatContainer from "./components/stat_container";
 import FightButton from "./components/fight_button";
+import ClearStateButton from "./components/clear_state_button";
 import "./index.css";
 
 class App extends Component {
@@ -21,6 +22,9 @@ class App extends Component {
 
 		// Gives selectFighter access to state.
 		this.selectFighter = this.selectFighter.bind(this);
+
+		// Gives clearState acecess to state.
+		this.clearState = this.clearState.bind(this);
 	}
 
 	/*
@@ -35,6 +39,21 @@ class App extends Component {
 		if (this.state.selectedFighter.length > 2) {
 			// TODO show errormessage about arr being full.
 		}
+	}
+
+	/*
+	A reset function which clears the selectFighter state
+	making it possible to choose two new fighters.
+	*/
+
+		clearState() {
+			/* Empties the state.
+			This is going to be used in clear_state_button.js to
+			be the result of an onClick.
+			*/
+				this.setState({
+					selectedFighter: []
+				})
 	}
 
 	// Renders the different components imported above and returns them to ReactDOM below.
@@ -52,6 +71,7 @@ class App extends Component {
 					}
 
 					<FightButton buttonText="FIGHT!" />
+					<ClearStateButton clearState={this.clearState} />
 					<Logo />
 				</div>
 		);
