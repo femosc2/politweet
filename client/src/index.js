@@ -45,14 +45,12 @@ class App extends Component {
 	A reset function which clears the selectFighter state
 	making it possible to choose two new fighters.
 	*/
-
 		clearState() {
 			//kod som tömmer staten
 				this.setState({
 					selectedFighter: []
 				})
 	}
-
 
 	// Renders the different components imported above and returns them to ReactDOM below.
 	render() {
