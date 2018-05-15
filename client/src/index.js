@@ -45,8 +45,12 @@ class App extends Component {
 	A reset function which clears the selectFighter state
 	making it possible to choose two new fighters.
 	*/
+
 		clearState() {
-			//kod som tömmer staten
+			/* Empties the state.
+			This is going to be used in clear_state_button.js to
+			be the result of an onClick.
+			*/
 				this.setState({
 					selectedFighter: []
 				})

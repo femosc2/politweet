@@ -43,7 +43,6 @@ class StatItem extends Component {
 				<div className="statItem"> {accCreation} </div>
 				<div className="statItem"> {wordCount} </div>
 			</li>
-
 		);
 	}
 }
