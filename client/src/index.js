@@ -22,6 +22,9 @@ class App extends Component {
 
 		// Gives selectFighter access to state.
 		this.selectFighter = this.selectFighter.bind(this);
+
+		// Gives clearState acecess to state.
+		this.clearState = this.clearState.bind(this);
 	}
 
 	/*
@@ -45,9 +48,7 @@ class App extends Component {
 
 		clearState() {
 			//kod som tömmer staten
-				this.setState = {
-				selectedFighter: []
-		}
+				this.setState({selectedFighter: []})
 	}
 
 
