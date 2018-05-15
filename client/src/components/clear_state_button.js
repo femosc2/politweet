@@ -2,26 +2,19 @@ import React, { Component } from "react";
 import "../styles/clear_state_button.css"
 
 class ClearStateButton extends Component {
+  handleClick() {
+		this.props.clearState();
+  }
   render() {
-		const buttonText = this.props.buttonText;
+
 		return (
+        <a clearState={this.props.clearState}
+          className="waves-effect waves-light btn clearStateButton"
+          onClick={() => {this.handleClick()}}>RESET</a>
 
-        <button className="clearStateButton" >
-        {buttonText}
-
-        </button>
 
     );
   }
 }
-
-
-
-
-
-
-
-
-
 
 export default ClearStateButton;

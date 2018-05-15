@@ -43,14 +43,13 @@ class App extends Component {
 	making it possible to choose two new fighters.
 	*/
 
-	/*
-	resetFighters(reset_button) {
 		clearState() {
-			// kod som tömmer staten
+			//kod som tömmer staten
+				this.setState = {
+				selectedFighter: []
 		}
-
 	}
-	*/
+
 
 	// Renders the different components imported above and returns them to ReactDOM below.
 	render() {
@@ -67,7 +66,7 @@ class App extends Component {
 					}
 
 					<FightButton buttonText="FIGHT!" />
-					<ClearStateButton buttonText="Reset" />
+					<ClearStateButton clearState={this.clearState} />
 					<Logo />
 				</div>
 		);
