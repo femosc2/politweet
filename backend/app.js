@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 const request = require("request");
+const cors = require("cors");
 const bearer_token = require("./config.js");
 const twitter_api = 'https://api.twitter.com/1.1/users/lookup.json';
+
+app.use(cors({origin: '*'}));
 
 app.get('/fighter1', (req, res) => {
 	const apiCall = {

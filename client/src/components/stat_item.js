@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/stat_item.css";
+import axios from 'axios';
 
 /*
 When the user selects a fighter this component renders a
@@ -7,12 +8,32 @@ list of the JSON data of the chosen fighter.
 */
 
 class StatItem extends Component {
+	constructor() {
+		super();
+		this.state = {
+			name: null,
+			description: null,
+			followers: null,
+			friends: null,
+			accCreation: null
+		}
+	}
+
 	componentDidMount() {
-		fetch("http://localhost:4000/" + this.props.selectedFighter)
-		.then(twitterData => {
-			 console.log(twitterData);
-			 return twitterData.json()
-		});
+		axios.get("http://localhost:4000/" + this.props.selectedFighter)
+			.then(response => {
+				console.log(response);
+				// const name = response.data["0"].name;
+				// console.log(name);
+				this.setState({name: response.data["0"].name});
+				this.setState({description: response.data["0"].description})
+				this.setState({followers: response.data["0"].followers_count})
+				this.setState({friends: response.data["0"].friends_count})
+				this.setState({accCreation: response.data["0"].created_at})
+			})
+			.catch(err => {
+				console.log('err', err);
+			});
 	}
 
 	render() {
@@ -20,35 +41,13 @@ class StatItem extends Component {
 		return (<div id="hiddenLoading">Loading</div>)
 	}
 
-	// Chooses the JSON file for the selected fighter
-	const statItem = require("../../tweets/" + this.props.selectedFighter + ".json");
-
-	// TODO make a list instead of a bunch of const's
-	const image = statItem.image;
-	const name = statItem.name;
-	const description = statItem.description;
-	const followers = statItem.followers;
-	const friends = statItem.friends;
-	const quotes = statItem.quotes;
-	const mentions = statItem.mentions;
-	const party = statItem.party;
-	const age = statItem.age;
-	const accCreation = statItem.accCreation;
-	const wordCount = statItem.wordCount;
-
 	return (
 			<li id="statList">
-				<div className="statItem"> {image} </div>
-				<div className="statItem"> {name} </div>
-				<div className="statItem"> {description} </div>
-				<div className="statItem"> {followers} </div>
-				<div className="statItem"> {friends} </div>
-				<div className="statItem"> {quotes} </div>
-				<div className="statItem"> {mentions} </div>
-				<div className="statItem"> {party} </div>
-				<div className="statItem"> {age} </div>
-				<div className="statItem"> {accCreation} </div>
-				<div className="statItem"> {wordCount} </div>
+				<div className="statItem"> {this.state.name} </div>
+				<div className="statItem"> {this.state.description} </div>
+				<div className="statItem"> Antal följare: {this.state.followers} </div>
+				<div className="statItem"> Antal vänner: {this.state.friends} </div>
+				<div className="statItem"> Kontot skapades: {this.state.accCreation} </div>
 			</li>
 		);
 	}
