@@ -166,4 +166,4 @@ app.get('/fighter8', (req, res) => {
 
 
 
-app.listen(4000, () => console.log('Example app listening on port 4000!'))
+app.listen(4000, () => console.log('Var hälsad kära utvecklare. Politweet lyssnar på port 4000!'))
