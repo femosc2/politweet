@@ -26,7 +26,7 @@
 	animation-timing-function: cubic-bezier(.54,.65,0,1.5);
 	animation-fill-mode: forwards;
 	color: #fff;
-	min-height: 580px;
+	min-height: 70%;
 }
 
 #statContainer1 {
@@ -48,7 +48,7 @@
 	animation-timing-function: cubic-bezier(.54,.65,0,1.5);
 	animation-fill-mode: forwards;
 	color: #fff;
-	min-height: 580px;
+	min-height: 70%;
 }
 
 /* Animations used */
