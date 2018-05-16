@@ -4,7 +4,7 @@ const request = require("request");
 const bearer_token = require("./config.js");
 const twitter_api = 'https://api.twitter.com/1.1/users/lookup.json';
 
-app.get('/fighter1', async (req, res) => {
+app.get('/fighter1', (req, res) => {
 	const apiCall = {
     method: 'GET',
     url: twitter_api,
