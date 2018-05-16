@@ -41,6 +41,10 @@ class StatItem extends Component {
 		return (<div id="hiddenLoading">Loading</div>)
 	}
 
+	const statItem = require("../../tweets/" + this.props.selectedFighter + ".json");
+
+	const wordCount = statItem.wordCount;
+
 	return (
 			<li id="statList">
 				<div className="statItem"> {this.state.name} </div>
@@ -48,6 +52,7 @@ class StatItem extends Component {
 				<div className="statItem"> Antal följare: {this.state.followers} </div>
 				<div className="statItem"> Antal vänner: {this.state.friends} </div>
 				<div className="statItem"> Kontot skapades: {this.state.accCreation} </div>
+				<div className="statItem"> {wordCount} </div>
 			</li>
 		);
 	}
