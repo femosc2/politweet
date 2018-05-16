@@ -1,6 +1,5 @@
 import json
 import math
-from pprint import pprint
 
 
 words_to_ignore = ["contributors", "null", "cordinates", "created_at",
