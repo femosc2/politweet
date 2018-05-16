@@ -1,13 +1,3 @@
 {
-  "image": "placeholder IMAGE ETTAN",
-  "name": "Annie Lööf",
-  "description": "placeholder DESCRIPTION ETTAN",
-  "followers": "placeholder FOLLOWERS ETTAN",
-  "friends": "placeholder FRIENDS ETTAN",
-  "quotes": "placeholder QUOTES ETTAN",
-  "mentions": "placeholder MENTIONS ETTAN",
-  "party": "placeholder PARTY ETTAN",
-  "age": "placeholder AGE ETTAN",
-  "accCreation": "placeholder ACC_CREATION ETTAN",
-  "wordCount": "placeholder WORDCOUNT ETTAN"
+ "wordCount" :151345.90714285715
 }

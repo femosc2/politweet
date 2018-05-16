@@ -38,37 +38,39 @@ def get_word_count(account):
     print(math.floor((len(tweets)) / 140),  "words has", account, "tweeted!")
     jsonData.close()
 
+    wordCount = """ "wordCount" """ ":"
+
     if account == "@bjorklundjan":
         jsonData = open("fighter6.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@annieloof":
         jsonData = open("fighter1.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@SwedishPM":
         jsonData = open("fighter2.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@jsjostedt":
         jsonData = open("fighter4.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@carlbildt":
         jsonData = open("fighter3.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@jimmieakesson":
         jsonData = open("fighter5.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     elif account == "@BuschEbba":
         jsonData = open("fighter7.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     else:
         jsonData = open("fighter8.json", "w")
-        jsonData.write("{wordCount:" + str(len(tweets) / 140) + "}")
+        jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
     
 

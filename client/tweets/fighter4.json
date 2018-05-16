@@ -1,13 +1,3 @@
 {
-  "image": "placeholder IMAGE FYRAN",
-  "name": "Jonas Sjöstedt",
-  "description": "placeholder DESCRIPTION FYRAN",
-  "followers": "placeholder FOLLOWERS FYRAN",
-  "friends": "placeholder FRIENDS FYRAN",
-  "quotes": "placeholder QUOTES FYRAN",
-  "mentions": "placeholder MENTIONS FYRAN",
-  "party": "placeholder PARTY FYRAN",
-  "age": "placeholder AGE FYRAN",
-  "accCreation": "placeholder ACC_CREATION FYRAN",
-  "wordCount": "placeholder WORDCOUNT FYRAN"
+ "wordCount" :160350.4
 }

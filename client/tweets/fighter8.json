@@ -1,13 +1,3 @@
 {
-  "image": "placeholder IMAGE ÅTTAN",
-  "name": "Isabella Lövin",
-  "description": "placeholder DESCRIPTION ÅTTAN",
-  "followers": "placeholder FOLLOWERS ÅTTAN",
-  "friends": "placeholder FRIENDS ÅTTAN",
-  "quotes": "placeholder QUOTES ÅTTAN",
-  "mentions": "placeholder MENTIONS ÅTTAN",
-  "party": "placeholder PARTY ÅTTAN",
-  "age": "placeholder AGE ÅTTAN",
-  "accCreation": "placeholder ACC_CREATION ÅTTAN",
-  "wordCount": "placeholder WORDCOUNT ÅTTAN"
+ "wordCount" :180408.47857142857
 }

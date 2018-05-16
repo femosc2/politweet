@@ -1,13 +1,3 @@
 {
-  "image": "placeholder IMAGE TVÅAN",
-  "name": "Stefan Löfven",
-  "description": "placeholder DESCRIPTION TVÅAN",
-  "followers": "placeholder FOLLOWERS TVÅAN",
-  "friends": "placeholder FRIENDS TVÅAN",
-  "quotes": "placeholder QUOTES TVÅAN",
-  "mentions": "placeholder MENTIONS TVÅAN",
-  "party": "placeholder PARTY TVÅAN",
-  "age": "placeholder AGE TVÅAN",
-  "accCreation": "placeholder ACC_CREATION TVÅAN",
-  "wordCount": "placeholder WORDCOUNT TVÅAN"
+ "wordCount" :8251.464285714286
 }

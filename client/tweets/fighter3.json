@@ -1,13 +1,3 @@
 {
-  "image": "placeholder IMAGE TREAN",
-  "name": "Carl Bildt",
-  "description": "placeholder DESCRIPTION TREAN",
-  "followers": "placeholder FOLLOWERS TREAN",
-  "friends": "placeholder FRIENDS TREAN",
-  "quotes": "placeholder QUOTES TREAN",
-  "mentions": "placeholder MENTIONS TREAN",
-  "party": "placeholder PARTY TREAN",
-  "age": "placeholder AGE TREAN",
-  "accCreation": "placeholder ACC_CREATION TREAN",
-  "wordCount": "placeholder WORDCOUNT TREAN"
+ "wordCount" :115844.7
 }
