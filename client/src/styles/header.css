@@ -63,6 +63,12 @@ h2 {
 	animation-fill-mode: forwards;
 }
 
+.rubrik {
+	display: inline;
+	font-size: 35px;
+	color: #FFF;
+}
+
 /* Animations used in this CSS component */
 
 @keyframes slideInTopAndSlideOutTop {

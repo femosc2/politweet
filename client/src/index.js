@@ -23,7 +23,7 @@ class App extends Component {
 		// Gives selectFighter access to state.
 		this.selectFighter = this.selectFighter.bind(this);
 
-		// Gives clearState acecess to state.
+		// Gives clearState access to state.
 		this.clearState = this.clearState.bind(this);
 	}
 
@@ -43,14 +43,9 @@ class App extends Component {
 
 	/*
 	A reset function which clears the selectFighter state
-	making it possible to choose two new fighters.
+	making it possible to choose new fighters.
 	*/
-
 		clearState() {
-			/* Empties the state.
-			This is going to be used in clear_state_button.js to
-			be the result of an onClick.
-			*/
 				this.setState({
 					selectedFighter: []
 				})

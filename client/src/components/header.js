@@ -13,6 +13,10 @@ class Header extends Component {
 				<div className="headerH2">
 					<h2>Choose your fighters</h2>
 				</div>
+
+				<ul className="modalButton">
+					<p className="rubrik">CHOOSE YOUR FIGHTERS</p>
+				</ul>
 			</header>
 		);
 	}
