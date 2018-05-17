@@ -10,11 +10,11 @@ class FightButton extends Component {
 						<a className="waves-effect waves-light btn-large modal-trigger" href="#modal3"> {buttonText} </a>
 						<div id="modal3" className="modal">
 							<div className="modal-content">
-								<h4 className="modalHeader">Battle</h4>
-								<p>Statcontainers and fighterprofiles</p>
+								<h4 className="modalHeader">Batalj</h4>
+								<p>Här ska det slåss!!!!!!!!!</p>
 							</div>
 							<div className="modal-footer">
-								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 							</div>
 						</div>
 					</ul>

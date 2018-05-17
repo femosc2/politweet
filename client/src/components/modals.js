@@ -15,14 +15,14 @@ class Modals extends Component {
 						<a className="waves-effect waves-light btn modal-trigger" href="#modal1">OM OSS</a>
 						<div id="modal1" className="modal">
 							<div className="modal-content">
-							<h5 className="modalHeader">The creators of Politweet:</h5>
+							<h5 className="modalHeader">Skaparna av Politweet:</h5>
 							<p>Ett gäng goa grabbar som studerar Informationsarkitektur på Malmö Universitet. Vi är: Adam Hermansson, Adam Nilsson, Felix Morau, John Iversen och Victor Persson.</p>
 							<h5 className="modalHeader">Politweets syfte:</h5>
-							<p>Varning - det här har inget att göra med verkligheten och är bara på skoj. Låt eller låt INTE
+							<p>Varning - det här har inget att göra med verkligheten och är bara på skoj. Låt INTE
 							denna hemsida påverka dina framtida politiska val.</p>
 							</div>
 							<div className="modal-footer">
-								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 							</div>
 						</div>
 					</ul>
@@ -31,7 +31,7 @@ class Modals extends Component {
 						<a className="waves-effect waves-light btn modal-trigger" href="#modal2">POÄNGTAVLA</a>
 						<div id="modal2" className="modal">
 							<div className="modal-content">
-								<h4 className="modalHeader">Leaderboard</h4>
+								<h4 className="modalHeader">Poängtavla</h4>
 								<table>
 									<thead>
 										<tr>
@@ -84,7 +84,7 @@ class Modals extends Component {
 							</div>
 
 							<div className="modal-footer">
-								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 							</div>
 						</div>
 					</ul>
