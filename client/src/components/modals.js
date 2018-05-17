@@ -37,10 +37,10 @@ class Modals extends Component {
 								<table>
 									<thead>
 										<tr>
-											<th>Plats</th>
-											<th>Namn</th>
-											<th>Antal vinster</th>
-											<th>Antal förluster</th>
+											<th>#</th>
+											<th>Name</th>
+											<th>Wins</th>
+											<th>Losses</th>
 											<th>Procent win</th>
 										</tr>
 									</thead>
