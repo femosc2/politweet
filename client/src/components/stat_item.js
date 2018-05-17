@@ -55,7 +55,7 @@ class StatItem extends Component {
 				<div className="statItem"> Antal vänner: {this.state.friends} </div>
 				<div className="statItem"> Kontot skapades: {this.state.accCreation} </div>
 				<div className="statItem"> Antal statusar: {this.state.statusesCount} </div>
-				<div className="statItem"> {wordCount} </div>
+				<div className="statItem"> Antal ord per tweet i genomsnitt: {wordCount} </div>
 				<div className="statItem"> Styrkepoäng: {Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 1000)} </div>
 			</li>
 		);
