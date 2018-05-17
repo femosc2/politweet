@@ -41,19 +41,19 @@ class StatItem extends Component {
 		if (this.state.statusesCount > 3200) {
 			const wordCount = wordCountFileReader.wordCount / 3200;
 			return wordCount;
-			console.log(wordCount);
 		}
 
 		else {
 			const wordCount = wordCountFileReader.wordCount / this.state.statusesCount;
 			return wordCount;
-			console.log(wordCount);
 		}
 	}
 
 	render() {
 	if (this.props.selectedFighter === null) {
-		return (<div id="hiddenLoading">Loading</div>)
+		return (
+			<div id="hiddenLoading">Laddar</div>
+		)
 	}
 
 
@@ -89,8 +89,8 @@ class StatItem extends Component {
 				Antal ord per tweet i genomsnitt: {Math.floor(this.averageWord())} </div>
 
 				<div className="statItem" 
-				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 1000."> 
-				Styrkepoäng: {Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 1000)} </div>
+				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 10 000."> 
+				Styrkepoäng: {Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)} </div>
 			</li>
 		);
 	}
