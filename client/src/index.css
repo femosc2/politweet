@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   background-color: #070707;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
