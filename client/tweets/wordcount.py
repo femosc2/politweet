@@ -1,7 +1,6 @@
 import json
 import math
 
-
 words_to_ignore = ["contributors", "null", "cordinates", "created_at",
  "entities", "hashtags", "symbols", "urls", "user_mentions", "favorite_count", 
  "favorited", "geo", "id_str", "in_reply_to_screen_name", "in_reply_to_status_id", "in_reply_to_status_id_str",
@@ -16,8 +15,6 @@ words_to_ignore = ["contributors", "null", "cordinates", "created_at",
  "screen_name", "statuses_count", "time_zone", "translator_type", "none", "utc_offset", "verified", "C0DEED", "DDEF6", "333333",
  ""
  ]
-
-
 
 def get_word_count(account):
     jsonData = open(account+"tweets.json", "r+")
@@ -72,9 +69,6 @@ def get_word_count(account):
         jsonData = open("fighter8.json", "w")
         jsonData.write("{" + "\n" + wordCount + str(len(tweets) / 140) + "\n" + "}")
         jsonData.close()
-    
-
-            
     
 get_word_count("@annieloof")
 get_word_count("@bjorklundjan")
