@@ -58,6 +58,7 @@ class StatItem extends Component {
 	}
 
 		const str_pts = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
+		console.log(str_pts);
 
 
 	// const wordCountFileReader = require("../../tweets/" + this.props.selectedFighter + ".json");
