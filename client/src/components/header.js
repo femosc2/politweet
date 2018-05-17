@@ -11,11 +11,11 @@ class Header extends Component {
 				</div>
 
 				<div className="headerH2">
-					<h2>Choose your fighters</h2>
+					<h2>Välj dina kämpar</h2>
 				</div>
 
 				<ul className="modalButton">
-					<p className="rubrik">CHOOSE YOUR FIGHTERS</p>
+					<p className="rubrik">VÄLJ DINA KÄMPAR</p>
 				</ul>
 			</header>
 		);

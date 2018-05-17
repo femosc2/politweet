@@ -12,15 +12,13 @@ class Modals extends Component {
 			<div className="modalBox">
 				<ul className="modalButton">
 					<ul id="nav-mobile" className="right">
-						<a className="waves-effect waves-light btn modal-trigger" href="#modal1">About</a>
+						<a className="waves-effect waves-light btn modal-trigger" href="#modal1">OM OSS</a>
 						<div id="modal1" className="modal">
 							<div className="modal-content">
 							<h5 className="modalHeader">The creators of Politweet:</h5>
-							<p>A couple of goa'gubbar currently studying Information Architecture at Malmö University consisting of
-								 Adam Hermansson, Adam Nilsson, Felix Morau,
-								John Iversen, and THE horunge Victor Persson.</p>
-							<h5 className="modalHeader">Politweet's purpose:</h5>
-							<p>Jackass warning text - det här har inget att göra med verkligheten, bara på skoj. Låt eller låt INTE
+							<p>Ett gäng goa grabbar som studerar Informationsarkitektur på Malmö Universitet. Vi är: Adam Hermansson, Adam Nilsson, Felix Morau, John Iversen och Victor Persson.</p>
+							<h5 className="modalHeader">Politweets syfte:</h5>
+							<p>Varning - det här har inget att göra med verkligheten och är bara på skoj. Låt eller låt INTE
 							denna hemsida påverka dina framtida politiska val.</p>
 							</div>
 							<div className="modal-footer">
@@ -30,7 +28,7 @@ class Modals extends Component {
 					</ul>
 
 					<ul id="nav-mobile" className="right">
-						<a className="waves-effect waves-light btn modal-trigger" href="#modal2">Leaderboard</a>
+						<a className="waves-effect waves-light btn modal-trigger" href="#modal2">POÄNGTAVLA</a>
 						<div id="modal2" className="modal">
 							<div className="modal-content">
 								<h4 className="modalHeader">Leaderboard</h4>
@@ -38,10 +36,10 @@ class Modals extends Component {
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>Name</th>
-											<th>Wins</th>
-											<th>Losses</th>
-											<th>Procent win</th>
+											<th>Namn</th>
+											<th>Vinster</th>
+											<th>Förluster</th>
+											<th>Procent vinst</th>
 										</tr>
 									</thead>
 

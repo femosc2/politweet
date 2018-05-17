@@ -11,7 +11,7 @@ class ClearStateButton extends Component {
 		return (
         <a clearState={this.props.clearState}
           className="waves-effect waves-light btn-large clearStateButton"
-          onClick={() => {this.handleClick()}}>RESET</a>
+          onClick={() => {this.handleClick()}}>ÅTERSTÄLL</a>
     );
   }
 }

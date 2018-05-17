@@ -65,7 +65,7 @@ class App extends Component {
 					})
 					}
 
-					<FightButton buttonText="FIGHT!" />
+					<FightButton buttonText="KÄBBEL!" />
 					<ClearStateButton clearState={this.clearState} />
 					<Logo />
 				</div>
