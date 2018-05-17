@@ -15,7 +15,8 @@ class StatItem extends Component {
 			description: null,
 			followers: null,
 			friends: null,
-			accCreation: null
+			accCreation: null,
+			statusesCount: null
 		}
 	}
 
@@ -30,6 +31,7 @@ class StatItem extends Component {
 				this.setState({followers: response.data["0"].followers_count})
 				this.setState({friends: response.data["0"].friends_count})
 				this.setState({accCreation: response.data["0"].created_at})
+				this.setState({statusesCount: response.data["0"].statuses_count})
 			})
 			.catch(err => {
 				console.log('err', err);
@@ -43,7 +45,7 @@ class StatItem extends Component {
 
 	const statItem = require("../../tweets/" + this.props.selectedFighter + ".json");
 
-	const wordCount = statItem.wordCount;
+	const wordCount = Math.floor(statItem.wordCount);
 
 	return (
 			<li id="statList">
@@ -52,7 +54,9 @@ class StatItem extends Component {
 				<div className="statItem"> Antal följare: {this.state.followers} </div>
 				<div className="statItem"> Antal vänner: {this.state.friends} </div>
 				<div className="statItem"> Kontot skapades: {this.state.accCreation} </div>
+				<div className="statItem"> Antal statusar: {this.state.statusesCount} </div>
 				<div className="statItem"> {wordCount} </div>
+				<div className="statItem"> Styrkepoäng: {Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 1000)} </div>
 			</li>
 		);
 	}
