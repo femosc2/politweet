@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-/* This component creates a fighter */
-
+// This component creates a fighter on click
 class RosterProfile extends Component {
 	handleClick() {
 		const id = this.props.id;

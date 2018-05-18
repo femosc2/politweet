@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "../styles/stat_item.css";
-import axios from 'axios';
+import axios from "axios";
 
 /*
-When the user selects a fighter this component renders a
-list of the JSON data of the chosen fighter.
+This component shall fetch data from the backend and
+present it.
 */
-
 class StatItem extends Component {
 	constructor() {
 		super();
@@ -23,7 +22,7 @@ class StatItem extends Component {
 	componentDidMount() {
 		axios.get("http://localhost:4000/" + this.props.selectedFighter)
 			.then(response => {
-				this.setState({name: response.data["0"].name});
+				this.setState({name: response.data["0"].name})
 				this.setState({description: response.data["0"].description})
 				this.setState({followers: response.data["0"].followers_count})
 				this.setState({friends: response.data["0"].friends_count})
@@ -31,7 +30,7 @@ class StatItem extends Component {
 				this.setState({statusesCount: response.data["0"].statuses_count})
 			})
 			.catch(err => {
-				console.log('err', err);
+				console.log("err", err);
 			});
 	}
 
@@ -57,8 +56,8 @@ class StatItem extends Component {
 		)
 	}
 
-		const str_pts = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
-		console.log(str_pts);
+		const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
+		console.log(totalPoints);
 
 
 	// const wordCountFileReader = require("../../tweets/" + this.props.selectedFighter + ".json");
@@ -94,7 +93,7 @@ class StatItem extends Component {
 
 				<div className="statItem"
 				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 10 000.">
-				Styrkepoäng: {str_pts} </div>
+				Styrkepoäng: {totalPoints} </div>
 			</li>
 		);
 	}

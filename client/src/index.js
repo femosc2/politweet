@@ -20,10 +20,7 @@ class App extends Component {
 			selectedFighter: []
 		};
 
-		// Gives selectFighter access to state.
 		this.selectFighter = this.selectFighter.bind(this);
-
-		// Gives clearState access to state.
 		this.clearState = this.clearState.bind(this);
 	}
 
@@ -45,10 +42,10 @@ class App extends Component {
 	A reset function which clears the selectFighter state
 	making it possible to choose new fighters.
 	*/
-		clearState() {
-				this.setState({
-					selectedFighter: []
-				})
+	clearState() {
+			this.setState({
+				selectedFighter: []
+			})
 	}
 
 	// Renders the different components imported above and returns them to ReactDOM below.
@@ -59,10 +56,14 @@ class App extends Component {
 					<Header />
 					<Modals />
 
-					{ this.state.selectedFighter.map(fighterId => {
-						return <StatContainer selectedFighter={fighterId} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
-									 />
-					})
+					{
+						this.state.selectedFighter.map(fighterId => {
+						return
+							<StatContainer selectedFighter={fighterId}
+								id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()
+								}
+							 />
+					 	})
 					}
 
 					<FightButton buttonText="KÄBBEL!" />
