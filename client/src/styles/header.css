@@ -1,5 +1,3 @@
- /* Div box containing the H1 text */
-
  .headerH1 {
  	position: absolute;
  	top: 50%;
@@ -7,8 +5,6 @@
  	z-index: 900;
  	color: #fff;
  }
-
- /* Div box containing the H2 text */
 
  .headerH2 {
  	position: absolute;
@@ -71,8 +67,6 @@
  	font-size: 35px;
  	color: #FFF;
  }
-
- /* Animations used in this CSS component */
 
  @keyframes slideInTopAndSlideOutTop {
  	0% {

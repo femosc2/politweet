@@ -44,8 +44,6 @@
 	display: none;
 }
 
-/* Animations */
-
 @keyframes slideInRight {
 	0% {
 		transform: translateX(100%);
