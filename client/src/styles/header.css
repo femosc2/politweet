@@ -1,143 +1,129 @@
- /* Div box containing the H1 text */
-.headerH1 {
-	position: absolute;
-	top: 50%;
-	text-align: center;
-	z-index: 900;
-	color: #fff;
-}
- /* Div box containing the H2 text */
-.headerH2 {
-	position: absolute;
-	top: 50%;
-	text-align: center;
-	z-index: 900;
-	color: #fff;
-}
+ .headerH1 {
+ 	position: absolute;
+ 	top: 50%;
+ 	text-align: center;
+ 	z-index: 900;
+ 	color: #fff;
+ }
 
-.headerImage {
-	height: 1400px;
-	width: 100%;
-	overflow: hidden;
-	-webkit-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-	-moz-box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-	box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
-	top:0;
-	z-index: 100;
-	position: fixed;
-	margin-top: -3%;
-	animation: slideInTopAndSlideOutTop 4s 1;
-	animation-fill-mode: forwards;
-}
+ .headerH2 {
+ 	position: absolute;
+ 	top: 50%;
+ 	text-align: center;
+ 	z-index: 900;
+ 	color: #fff;
+ }
 
-h1 {
-	text-transform: uppercase;
-	font-size: 65px;
-	letter-spacing: 30px;
-	opacity: 0;
-	text-align: center;
-	color: #fff;
-	z-index: 900;
-	position: fixed;
-	top: 25%;
-	left: 40%;
-	animation: slideInRightAndSlideOutLeft 3s 1;
-	animation-delay: 1s;
-	animation-timing-function: cubic-bezier(.1,1.01,1,.56);
-	animation-fill-mode: forwards;
-}
+ .headerImage {
+ 	height: 1400px;
+ 	width: 100%;
+ 	overflow: hidden;
+ 	-webkit-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+ 	-moz-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+ 	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+ 	top: 0;
+ 	z-index: 100;
+ 	position: fixed;
+ 	margin-top: -3%;
+ 	animation: slideInTopAndSlideOutTop 4s 1;
+ 	animation-fill-mode: forwards;
+ }
 
-h2 {
-	opacity: 0;
-	text-align: center;
-	color: #fff;
-	z-index: 900;
-	position: fixed;
-	top: 35%;
-	left: 40%;
-	animation: slideInLeftAndSlideOutRight 3s 1;
-	/* The curve of which the animation animates */
-	animation-timing-function: cubic-bezier(.1,1.01,1,.56);
-	animation-delay: 1s;
-	/* Once the animation is finished it freezes on the last frame */
-	animation-fill-mode: forwards;
-}
+ h1 {
+ 	text-transform: uppercase;
+ 	font-size: 65px;
+ 	letter-spacing: 30px;
+ 	opacity: 0;
+ 	text-align: center;
+ 	color: #fff;
+ 	z-index: 900;
+ 	position: fixed;
+ 	top: 25%;
+ 	left: 40%;
+ 	animation: slideInRightAndSlideOutLeft 3s 1;
+ 	animation-delay: 1s;
+ 	animation-timing-function: cubic-bezier(.1, 1.01, 1, .56);
+ 	animation-fill-mode: forwards;
+ }
 
-.rubrik {
-	display: inline;
-	font-size: 35px;
-	color: #FFF;
-}
+ h2 {
+ 	opacity: 0;
+ 	text-align: center;
+ 	color: #fff;
+ 	z-index: 900;
+ 	position: fixed;
+ 	top: 35%;
+ 	left: 40%;
+ 	animation: slideInLeftAndSlideOutRight 3s 1;
+ 	/* The curve of which the animation animates */
+ 	animation-timing-function: cubic-bezier(.1, 1.01, 1, .56);
+ 	animation-delay: 1s;
+ 	/* Once the animation is finished it freezes on the last frame */
+ 	animation-fill-mode: forwards;
+ }
 
-/* Animations used in this CSS component */
+ .rubrik {
+ 	display: inline;
+ 	font-size: 35px;
+ 	color: #FFF;
+ }
 
-@keyframes slideInTopAndSlideOutTop {
-	0% {
-		opacity: 1;
-		transform: translateY(-100%);
-	}
+ @keyframes slideInTopAndSlideOutTop {
+ 	0% {
+ 		opacity: 1;
+ 		transform: translateY(-100%);
+ 	}
+ 	20% {
+ 		opacity: 1;
+ 	}
+ 	80% {
+ 		opacity: 1;
+ 		transform: translateY(0%);
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 		transform: translateY(-100%);
+ 	}
+ }
 
-	20% {
-		opacity: 1;
-	}
+ @keyframes slideInLeftAndSlideOutRight {
+ 	0% {
+ 		opacity: 0;
+ 		transform: translateX(100%);
+ 	}
+ 	20% {
+ 		opacity: 1;
+ 	}
+ 	80% {
+ 		opacity: 1;
+ 		transform: translateX(0%);
+ 	}
+ 	90% {
+ 		opacity: 0;
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 		transform: translateX(-800%);
+ 	}
+ }
 
-	80% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(-100%);
-	}
-}
-
-@keyframes slideInLeftAndSlideOutRight {
-	0% {
-		opacity: 0;
-		transform: translateX(100%);
-	}
-
-	20% {
-		opacity: 1;
-	}
-
-	80% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-
-	90% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateX(-800%);
-	}
-}
-
-@keyframes slideInRightAndSlideOutLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
-
-	20% {
-		opacity: 1;
-	}
-
-	80% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-
-	90% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateX(800%);
-	}
-}
+ @keyframes slideInRightAndSlideOutLeft {
+ 	0% {
+ 		opacity: 0;
+ 		transform: translateX(-100%);
+ 	}
+ 	20% {
+ 		opacity: 1;
+ 	}
+ 	80% {
+ 		opacity: 1;
+ 		transform: translateX(0%);
+ 	}
+ 	90% {
+ 		opacity: 0;
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 		transform: translateX(800%);
+ 	}
+ }

@@ -3,7 +3,6 @@ import StatItem from "./stat_item";
 import "../styles/stat_container.css";
 
 // Renders a div containing the StatItems
-
 class StatContainer extends Component {
 	render() {
 	return (
