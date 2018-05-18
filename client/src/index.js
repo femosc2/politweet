@@ -36,8 +36,8 @@ class App extends Component {
 			this.setState({selectedFighter: [...this.state.selectedFighter, fighterId]})
 		}
 
-		if (this.state.selectedFighter.length > 2) {
-			// TODO show errormessage about arr being full.
+		else if (this.state.selectedFighter.length >= 2) {
+			alert("Bara två kämpar kan slåss samtidigt!");
 		}
 	}
 
