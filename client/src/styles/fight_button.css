@@ -21,15 +21,18 @@
 
 .fightContainer {
 	min-height: 544px;
-
 }
 
 .fightContentHeight {
 	min-height: 600px;
 }
 
-.modal.footer {
+.fighter0 {
+	background-color: blue;
+}
 
+.fighter1 {
+	background-color: red;
 }
 
 .open:focus {
