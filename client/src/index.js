@@ -58,10 +58,8 @@ class App extends Component {
 
 					{
 						this.state.selectedFighter.map(fighterId => {
-						return
-							<StatContainer selectedFighter={fighterId}
-								id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()
-								}
+						return <StatContainer selectedFighter={fighterId}
+								id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
 							 />
 					 	})
 					}
