@@ -19,6 +19,19 @@
 	line-height: 33px;
 }
 
+.fightContainer {
+	min-height: 544px;
+
+}
+
+.fightContentHeight {
+	min-height: 600px;
+}
+
+.modal.footer {
+
+}
+
 .open:focus {
 	outline: none;
 }

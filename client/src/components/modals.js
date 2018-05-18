@@ -17,14 +17,14 @@ class Modals extends Component {
 							<div className="modal-content">
 							<h5 className="modalHeader">Skaparna av Politweet</h5>
 								<p>Ett gäng goa grabbar som studerar Informationsarkitektur på Malmö Universitet. Vi är: Adam Hermansson, Adam Nilsson, Felix Morau, John Iversen och Victor Persson.</p>
-							
+
 							<h5 className="modalHeader">Politweets syfte</h5>
 								<p>Syftet med Politweet är för gruppen att lära sig JavaScript och React. Det är även det första systemutvecklingsprojekt gruppmedlemmarna varit del av och agerar alltså även som ett lärandetillfälle för detta.</p>
 								<p>Varning - det här har inget att göra med verkligheten och är bara på skoj. Låt INTE denna hemsida påverka dina framtida politiska val.</p>
-							
+
 							<h5 className="modalHeader">Användning av hemsidan</h5>
 								<p>För att använda hemsidan, klicka på två personer vars twitter-stats du vill jämföra. Klicka sedan på Käbbel-knappen. Om du ångrar dig och vill välja andra personer att jämföra, klicka på återställ-knappen.</p>
-							
+
 							<h5 className="modalHeader">Annan information</h5>
 								<p>Personernas "styrkepoäng" räknas ut genom att lägga ihop antal följare, vänner och hur många statusar individen gjort. Sedan delas detta med 10 000 för att få ett mer lättbegripligt nummer att titta på.</p>
 							</div>

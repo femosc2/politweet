@@ -10,8 +10,8 @@ class FightButton extends Component {
 				<ul className="modalButton">
 					<ul id="nav-mobile" className="">
 						<a className="waves-effect waves-light btn-large modal-trigger" href="#modal3"> {buttonText} </a>
-						<div id="modal3" className="modal">
-							<div className="modal-content">
+					<div id="modal3" className="modal fightContentHeight">
+							<div className="modal-content fightContainer">
 								<h4 className="modalHeader">Batalj</h4>
 								<h4> {sum41} </h4>
 								<p>Här ska det slåss!!!!!!!!!</p>
