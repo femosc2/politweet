@@ -8,6 +8,29 @@
 
 The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue!
 
+#### Windows
+
+1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/).
+2. During the installation process make sure you tick the option to get "PIP" as well.
+3. Once python2 with pip are both installed, open the cmd and type ```pip install tweepy```.
+
+#### Mac
+
+1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/)
+1. During the install process make sure you tick the option to get "PIP" as well.
+2. Once python2 with pip are both installed, open your terminal and type```sudo pip install tweepy```.
+
+Enter your computers password and press enter *(PW won't visually show in your terminal window, but it's there)*.
+
+#### Linux
+
+Python2.7 comes preinstalled on most Linux distros, if you have removed the python package you can get it by following these steps:
+
+1. Open your terminal
+2. Download/install Python2 with ```sudo apt-get install python```
+3. Download/install PIP through ```apt-get install python-pip```
+4. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
+
 ## Usage
 
 ### 1.
@@ -54,30 +77,6 @@ Navigate back to the client folder and run the application by starting a local s
 The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually in your webbrowser.
 
 
-
-
-#### Windows
-
-1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/).
-2. During the installation process make sure you tick the option to get "PIP" as well.
-3. Once python2 with pip are both installed, open the cmd and type ```pip install tweepy```.
-
-#### Mac
-
-1. Download and install [Python2.7](https://www.python.org/downloads/release/python-2714/)
-1. During the install process make sure you tick the option to get "PIP" as well.
-2. Once python2 with pip are both installed, open your terminal and type```sudo pip install tweepy```.
-
-Enter your computers password and press enter *(PW won't visually show in your terminal window, but it's there)*.
-
-#### Linux
-
-Python2.7 comes preinstalled on most Linux distros, if you have removed the python package you can get it by following these steps:
-
-1. Open your terminal
-2. Download/install Python2 with ```sudo apt-get install python```
-3. Download/install PIP through ```apt-get install python-pip```
-4. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
 
 
 
