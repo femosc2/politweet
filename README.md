@@ -2,6 +2,12 @@
 
 **Welcome to the Politweet!** A simple web application designed to compare swedish politicians based on their Twitter statistics. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues).
 
+### Tweepy
+
+#### How to use and install the Tweepy library using Python2
+
+The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue!
+
 ## Usage
 
 ### 1.
@@ -24,7 +30,22 @@ This will install all the dependencies required to run the project.
 
 ### 4.
 
-Run the application by starting a local server with the following command:
+Navigate to the backend folder and type:
+
+```bash npm install```
+
+afterwards, start the backend by typing node app.js
+
+### 5. 
+Navigate to the tweets folder and type:
+
+```python tweet.py```
+
+Wait until the terminal tells you that the script is finished!
+
+### 6.
+
+Navigate back to the client folder and run the application by starting a local server with the following command:
 
 ```bash npm start```
 
@@ -34,11 +55,6 @@ The server should start on localhost:3000 automatically, if it doesn't, you can 
 
 
 
-### Tweepy
-
-#### How to use and install the Tweepy library using Python2
-
-The Politweet backend is built on Python2.7 utilizing the Tweepy API library and requires a computer capable of running Python2.7 scripts. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue!
 
 #### Windows
 
