@@ -17,6 +17,23 @@
 	z-index: 400;
 }
 
+.modal .modal-content {
+	padding: 15px;
+}
+
+.modalP {
+	margin: 4px;
+}
+
+h5 {
+	margin-top: 0;
+}
+
+.about {
+	min-height: 527px;
+	top: 0%;
+}
+
 .modal-close {
 	font-size: 25px;
 	color: #FFF;
@@ -24,6 +41,7 @@
 
 .modal-footer {
 	background-color: #a365bc !important;
+	margin-bottom: 0;
 	z-index: 400;
 }
 
