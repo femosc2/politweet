@@ -2,38 +2,6 @@
 
 **Welcome to the Politweet!** A simple web application designed to compare swedish politicians based on their Twitter statistics. Follow the instrictions below, if you encounter any difficulties, don't hesitate to submit your issue [here](https://github.com/femosc2/politweet/issues).
 
-## Usage
-
-### 1.
-
-Make sure that you have Node.js installed on your system.
-
-If you don't, you can download node.js from [nodejs.org](https://nodejs.org/en/).
-
-### 2.
-
-Your next step will be to download/clone this Github-repo. If you are familiar with Github, you can clone it. If not, just download the zip-file and extract it to a suitable location.
-
-### 3.
-
-Now head over to your terminal or cmd, navigate to politweet/client and type:
-
-```bash npm install```
-
-This will install all the dependencies required to run the project.
-
-### 4.
-
-Run the application by starting a local server with the following command:
-
-```bash npm start```
-
-### 5.
-
-The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually in your webbrowser.
-
-
-
 ### Tweepy
 
 #### How to use and install the Tweepy library using Python2
@@ -62,6 +30,53 @@ Python2.7 comes preinstalled on most Linux distros, if you have removed the pyth
 2. Download/install Python2 with ```sudo apt-get install python```
 3. Download/install PIP through ```apt-get install python-pip```
 4. Once Python2 with PIP is installed, type ```pip install tweepy``` inorder to get the tweepy library.
+
+## Usage
+
+### 1.
+
+Make sure that you have Node.js installed on your system.
+
+If you don't, you can download node.js from [nodejs.org](https://nodejs.org/en/).
+
+### 2.
+
+Your next step will be to download/clone this Github-repo. If you are familiar with Github, you can clone it. If not, just download the zip-file and extract it to a suitable location.
+
+### 3.
+
+Now head over to your terminal or cmd, navigate to politweet/client and type:
+
+```bash npm install```
+
+This will install all the dependencies required to run the project.
+
+### 4.
+
+Navigate to the backend folder and type:
+
+```bash npm install```
+
+afterwards, start the backend by typing node app.js
+
+### 5. 
+Navigate to the tweets folder and type:
+
+```python tweet.py```
+
+Wait until the terminal tells you that the script is finished!
+
+### 6.
+
+Navigate back to the client folder and run the application by starting a local server with the following command:
+
+```bash npm start```
+
+### 5.
+
+The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually in your webbrowser.
+
+
 
 
 
