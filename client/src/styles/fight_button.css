@@ -14,18 +14,18 @@
 	-moz-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
 	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
 	padding: 0px;
-	margin-top: 52%;
+	margin-top: 42%;
 	margin-bottom: 10px;
 	font-size: 20px;
 	line-height: 33px;
 }
 
-.fightContainer {
-	min-height: 544px;
-}
+
 
 .fightContentHeight {
 	min-height: 600px;
+	padding: 0px;
+
 }
 
 .fighter0 {
