@@ -39,7 +39,7 @@ class FightButton extends Component {
 						<div id="modal3" className="modal fightContentHeight">
 								<div className="modal-content fightContainer">
 									<h4 className="modalHeader">Batalj</h4>
-									<h5> Vinnaren är: {fighter1}! </h5>
+								<h5 id="fadeIn"> Vinnaren är: {fighter1}! </h5>
 									<img id="imgFighter1" src={imgsrc1} />
 									<img id="imgFighter2" src={imgsrc2} />
 								<div className="modal-footer">

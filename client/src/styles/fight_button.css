@@ -61,6 +61,12 @@
 	animation-fill-mode: forwards;
 }
 
+#fadeIn {
+	animation: fadeIn 40s 1;
+	animation-fill-mode: forwards;
+}
+
+
 /* Animations used */
 
 @keyframes slideInBottom {
