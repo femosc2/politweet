@@ -31,8 +31,7 @@ class App extends Component {
 	the user selected. Logs result to the browser console.
 	*/
 	setStats(stats) {
-		console.log('Setting stats', stats);
-		this.setState({stats: [...this.state.setStats]})
+		this.setState({stats:[...this.state.stats, stats]});
 	}
 
 	selectFighter(fighterId) {
@@ -52,6 +51,9 @@ class App extends Component {
 	clearState() {
 			this.setState({
 				selectedFighter: []
+			})
+			this.setState({
+				stats: []
 			})
 	}
 

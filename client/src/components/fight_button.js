@@ -5,6 +5,8 @@ import "../styles/fight_button.css";
 class FightButton extends Component {
 	render() {
 		console.log(this.props);
+		// const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
+
 		return (
 				<ul className="modalButton">
 					<ul id="nav-mobile" className="">
