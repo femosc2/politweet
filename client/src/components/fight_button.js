@@ -40,9 +40,8 @@ class FightButton extends Component {
 								<div className="modal-content fightContainer">
 									<h4 className="modalHeader">Batalj</h4>
 									<h5> Vinnaren är: {fighter1}! </h5>
-										<img id="imgFighter1" src={imgsrc1} />
-										<img id="imgFighter2" src={imgsrc2} />
-
+									<img id="imgFighter1" src={imgsrc1} />
+									<img id="imgFighter2" src={imgsrc2} />
 								<div className="modal-footer">
 									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 								</div>
@@ -63,7 +62,8 @@ class FightButton extends Component {
 								<div className="modal-content fightContainer">
 									<h4 className="modalHeader">Batalj</h4>
 								<h5> Bara käbbel! Det blev lika mellan {fighter1} och {fighter2}! </h5>
-
+								<img id="imgFighter1" src={imgsrc1} />
+								<img id="imgFighter2" src={imgsrc2} />
 								<div className="modal-footer">
 									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 								</div>
@@ -84,7 +84,8 @@ class FightButton extends Component {
 								<div className="modal-content fightContainer">
 									<h4 className="modalHeader">Batalj</h4>
 								<h4> Vinnaren är: {fighter2}! </h4>
-
+								<img id="imgFighter1" src={imgsrc1} />
+								<img id="imgFighter2" src={imgsrc2} />
 								<div className="modal-footer">
 									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 								</div>
