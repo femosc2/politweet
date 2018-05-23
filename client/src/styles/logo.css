@@ -1,0 +1,32 @@
+.logo1 {
+	width: 4rem;
+	box-sizing: border-box;
+	position: fixed;
+	margin-top: 3%;
+	border-radius: 50%;
+	animation: shrink 1s 1;
+	animation-fill-mode: forwards;
+}
+
+.logo1:hover {
+	animation: grow 1s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+@keyframes shrink {
+	0% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
