@@ -49,15 +49,11 @@ class StatItem extends Component {
 		}
 	}
 
-	// accCreationDate() {
-	// 	if (this.state.accCreation.length > 5) {
-	// 		const accCreation = this.state.accCreation;
-	// 		const accCreationYear = (accCreation.substring(accCreation.length - 4));
-	// 		return accCreationYear;
-	// 	}
-	// }
-
-	//Kontot skapades: {this.accCreationDate()} </div>
+	accCreationDate() {
+			const accCreation = String(this.state.accCreation);
+			const accCreationYear = (accCreation.substring(accCreation.length - 4));
+			return accCreationYear;
+	}
 
 	render() {
 	if (this.props.selectedFighter === null) {
@@ -86,7 +82,7 @@ class StatItem extends Component {
 
 				<div className="statItem"
 				title="När personen skapade sitt Twitterkonto.">
-				Kontot skapades: {this.state.accCreation} </div>
+				Kontot skapades: {this.accCreationDate()} </div>
 
 				<div className="statItem"
 				title="Hur många statusar personen lagt upp totalt på Twitter.">
