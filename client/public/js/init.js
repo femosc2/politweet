@@ -4,7 +4,6 @@
 (function ($) { // Start of jQuery name space
     $(function () {
         $("body").on("click", "#show-modal3", function() {
-            console.log("Show Modal")
             $("#modal3").modal();
         });
 

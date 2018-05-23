@@ -20,12 +20,8 @@
 	line-height: 33px;
 }
 
-
-
-.fightContentHeight {
-	min-height: 600px;
-	padding: 0px;
-
+.fightContainer {
+	min-height: 450px;
 }
 
 .fighter0 {
@@ -45,6 +41,16 @@
 	-webkit-box-shadow: 0px 0px 12px 0px rgba(19, 171, 158, 1);
 	-moz-box-shadow: 0px 0px 12px 0px rgba(19, 171, 158, 1);
 	box-shadow: 0px 0px 12px 0px rgba(19, 171, 158, 1);
+}
+
+#imgFighter1 {
+	animation: firstFighter 5s 1;
+	animation-fill-mode: forwards;
+}
+
+#imgFighter2 {
+	animation: secondFighter 5s 1;
+	animation-fill-mode: forwards;
 }
 
 /* Animations used */
@@ -69,5 +75,47 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes firstFighter {
+	0% {
+		transform: translateX(-100%);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(200%);
+		transform: rotate(360deg);
+	}
+	70% {
+		transform: translateX(50%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(100%);
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+}
+
+@keyframes secondFighter {
+	0% {
+		transform: translateX(100%);
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-200%);
+		transform: rotate(360deg);
+	}
+	70% {
+		transform: translateX(-50%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-100%);
+		transform: rotate(0deg);
+		opacity: 0;
 	}
 }
