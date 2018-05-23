@@ -26,10 +26,12 @@
 
 .fighter0 {
 	background-color: blue;
+		border-radius: 80%;
 }
 
 .fighter1 {
 	background-color: red;
+		border-radius: 80%;
 }
 
 .open:focus {
@@ -51,6 +53,17 @@
 #imgFighter2 {
 	animation: secondFighter 5s 1;
 	animation-fill-mode: forwards;
+}
+
+#imgWinner {
+	animation: fadeIn 70s 1;
+	animation-fill-mode: forwards;
+	width: 17.5rem;
+	box-sizing: border-box;
+	position: fixed;
+	border-radius: 40%;
+	margin-left: -28rem;
+	margin-top: 1rem;
 }
 
 #fadeIn {

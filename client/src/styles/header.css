@@ -14,6 +14,7 @@
  	color: #fff;
  }
 
+
  .headerImage {
  	height: 1400px;
  	width: 100%;
@@ -38,7 +39,7 @@
  	color: #fff;
  	z-index: 900;
  	position: fixed;
- 	top: 25%;
+ 	top: 15%;
  	left: 40%;
  	animation: slideInRightAndSlideOutLeft 3s 1;
  	animation-delay: 1s;
@@ -52,7 +53,7 @@
  	color: #fff;
  	z-index: 900;
  	position: fixed;
- 	top: 35%;
+ 	top: 25%;
  	left: 40%;
  	animation: slideInLeftAndSlideOutRight 3s 1;
  	/* The curve of which the animation animates */
@@ -60,6 +61,21 @@
  	animation-delay: 1s;
  	/* Once the animation is finished it freezes on the last frame */
  	animation-fill-mode: forwards;
+ }
+
+ #splashimg {
+   border-radius: 43%;
+   width: 27rem;
+   opacity: 0;
+   color: #fff;
+   z-index: 900;
+   position: fixed;
+   top: 45%;
+   left: 40%;
+   animation: slideInRightAndSlideOutLeft 3s 1;
+   animation-delay: 1s;
+   animation-timing-function: cubic-bezier(.1, 1.01, 1, .36);
+   animation-fill-mode: forwards;
  }
 
  .rubrik {

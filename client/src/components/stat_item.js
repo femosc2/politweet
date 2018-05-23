@@ -63,38 +63,40 @@ class StatItem extends Component {
 	}
 
 	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
-	
+
 	return (
 			<li id="statList">
+
 				<div className="statItem"
-				title="Personens namn på Twitter."> {this.state.name} </div>
+				title="Personens namn på Twitter."><h4>{this.state.name}</h4></div>
+				<br></br>
 
 				<div className="statItem"
 				title="Personens beskrivning på Twitter."> {this.state.description} </div>
 
 				<div className="statItem"
 				title="Antal följare peronen har på Twitter.">
-				Folkstöd: {this.state.followers} </div>
+				<strong>Folkligt stöd:</strong> {this.state.followers}</div>
 
 				<div className="statItem"
 				title="Antal vänner personen har på Twitter.">
-				Mediestöd: {this.state.friends} </div>
+				<strong>Mediestöd:</strong> {this.state.friends} </div>
 
 				<div className="statItem"
 				title="När personen skapade sitt Twitterkonto.">
-				Twitterpolitiker sedan: {this.accCreationDate()} </div>
+				<strong>Twitterpolitiker sedan:</strong> {this.accCreationDate()} </div>
 
 				<div className="statItem"
 				title="Hur många statusar personen lagt upp totalt på Twitter.">
-				Försök att göra sig hörd: {this.state.statusesCount} </div>
+				<strong>Försök att göra sig hörd:</strong> {this.state.statusesCount} </div>
 
 				<div className="statItem"
 				title="Räknas ut genom att dela totala antalet ord politkern använt med hur många statusar den gjort.">
-				Käbbelindex: {Math.floor(this.averageWord())} </div>
+				<strong> Käbbel-index:</strong>  {Math.floor(this.averageWord())} </div>
 
 				<div className="statItem"
 				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 10 000.">
-				Styrkepoäng: {totalPoints} </div>
+				<strong>Styrkepoäng:</strong> {totalPoints} </div>
 			</li>
 		);
 	}
