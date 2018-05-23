@@ -41,9 +41,14 @@ h5 {
 }
 
 .modal-footer {
-	background-color: #a365bc !important;
+	background-color: #f4f142 !important;
+	color: #4286f4 !important;
 	margin-bottom: 0;
 	z-index: 400;
+}
+
+.modal-close {
+	color: #4286f4 !important;
 }
 
 .right {
