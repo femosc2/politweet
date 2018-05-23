@@ -30,7 +30,7 @@ h5 {
 }
 
 .about {
-	min-height: 527px;
+	min-height: 613px;
 	top: 0%;
 }
 
@@ -52,7 +52,7 @@ h5 {
 .modalButton {
 	width: 100%;
 	position: fixed;
-	animation: slideInRight 4s 1, fadeIn 4s 1;
+	animation: slideInRight 0s 1, fadeIn 1s 1;
 	animation-timing-function: cubic-bezier(.57, -0.62, 0, 1.69);
 	margin-top: 0.5%;
 	text-align: center;
@@ -60,15 +60,6 @@ h5 {
 
 .waves-ripple {
 	display: none;
-}
-
-@keyframes slideInRight {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
 }
 
 @keyframes fadeIn {

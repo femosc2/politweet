@@ -31,8 +31,7 @@ class App extends Component {
 	the user selected. Logs result to the browser console.
 	*/
 	setStats(stats) {
-		console.log('Setting stats', stats);
-		this.setState({stats: [...this.state.setStats]})
+		this.setState({stats:[...this.state.stats, stats]});
 	}
 
 	selectFighter(fighterId) {
@@ -53,6 +52,9 @@ class App extends Component {
 			this.setState({
 				selectedFighter: []
 			})
+			this.setState({
+				stats: []
+			})
 	}
 
 	// Renders the different components imported above and returns them to ReactDOM below.
@@ -63,8 +65,8 @@ class App extends Component {
 					<Header />
 					<Modals />
 
-				{ this.state.selectedFighter.map(fighterId => {
-					return <StatContainer selectedFighter={fighterId} setStats={(stats) => {this.setStats(stats)}} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
+				{ this.state.selectedFighter.map((fighterId, i) => {
+					return <StatContainer selectedFighter={fighterId} key={i} setStats={(stats) => {this.setStats(stats)}} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
 							 />
 					 	})
 				}
