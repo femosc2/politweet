@@ -20,12 +20,16 @@
 	line-height: 33px;
 }
 
+.modal-footer {
+	margin-bottom: 0;
+}
+
 .fightContainer {
-	min-height: 544px;
+	min-height: 490px;
 }
 
 .fightContentHeight {
-	min-height: 600px;
+	max-height: 480px;
 }
 
 .fighter0 {
