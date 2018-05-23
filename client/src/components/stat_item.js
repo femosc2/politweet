@@ -28,6 +28,7 @@ class StatItem extends Component {
 				this.setState({friends: response.data["0"].friends_count})
 				this.setState({accCreation: response.data["0"].created_at})
 				this.setState({statusesCount: response.data["0"].statuses_count})
+				this.props.setStats(this.state);
 			})
 			.catch(err => {
 				console.log("err", err);
@@ -56,9 +57,7 @@ class StatItem extends Component {
 		)
 	}
 
-		const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
-		console.log(totalPoints);
-
+	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
 
 	// const wordCountFileReader = require("../../tweets/" + this.props.selectedFighter + ".json");
 	// const wordCount = Math.floor(wordCountFileReader.wordCount);
