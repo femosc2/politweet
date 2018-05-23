@@ -51,6 +51,16 @@
 	box-shadow: 0px 0px 12px 0px rgba(19, 171, 158, 1);
 }
 
+#imgFighter1 {
+	animation: firstFighter 5s infinite;
+	animation-fill-mode: forwards;
+}
+
+#imgFighter2 {
+	animation: secondFighter 5s infinite;
+	animation-fill-mode: forwards;
+}
+
 /* Animations used */
 
 @keyframes slideInBottom {
@@ -73,5 +83,41 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes firstFighter {
+	0% {
+		transform: translateX(-100%);
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: translateX(200%);
+		transform: rotate(360deg);
+	}
+	70% {
+		transform: translateX(50%);
+	}
+	100% {
+		transform: translateX(100%);
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes secondFighter {
+	0% {
+		transform: translateX(100%);
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: translateX(-200%);
+		transform: rotate(360deg);
+	}
+	70% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(-100%);
+		transform: rotate(0deg);
 	}
 }
