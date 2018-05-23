@@ -49,6 +49,15 @@ class StatItem extends Component {
 		}
 	}
 
+	// accCreationDate() {
+	// 	if (this.state.accCreation.length > 5) {
+	// 		const accCreation = this.state.accCreation;
+	// 		const accCreationYear = (accCreation.substring(accCreation.length - 4));
+	// 		return accCreationYear;
+	// 	}
+	// }
+
+	//Kontot skapades: {this.accCreationDate()} </div>
 
 	render() {
 	if (this.props.selectedFighter === null) {
@@ -57,8 +66,16 @@ class StatItem extends Component {
 		)
 	}
 
+<<<<<<< HEAD
+
+	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000);
+	// const wordCountFileReader = require("../../tweets/" + this.props.selectedFighter + ".json");
+	// const wordCount = Math.floor(wordCountFileReader.wordCount);
+
+=======
 	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
 	
+>>>>>>> 07916c3f2ef6f9983481bc995da7ccba596593d5
 	return (
 			<li id="statList">
 				<div className="statItem"
