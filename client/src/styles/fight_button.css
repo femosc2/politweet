@@ -44,12 +44,12 @@
 }
 
 #imgFighter1 {
-	animation: firstFighter 5s infinite;
+	animation: firstFighter 5s 1;
 	animation-fill-mode: forwards;
 }
 
 #imgFighter2 {
-	animation: secondFighter 5s infinite;
+	animation: secondFighter 5s 1;
 	animation-fill-mode: forwards;
 }
 
@@ -82,6 +82,7 @@
 	0% {
 		transform: translateX(-100%);
 		transform: rotate(0deg);
+		opacity: 1;
 	}
 	50% {
 		transform: translateX(200%);
@@ -89,10 +90,12 @@
 	}
 	70% {
 		transform: translateX(50%);
+		opacity: 1;
 	}
 	100% {
 		transform: translateX(100%);
 		transform: rotate(0deg);
+		opacity: 0;
 	}
 }
 
@@ -100,6 +103,7 @@
 	0% {
 		transform: translateX(100%);
 		transform: rotate(0deg);
+		opacity: 1;
 	}
 	50% {
 		transform: translateX(-200%);
@@ -107,9 +111,11 @@
 	}
 	70% {
 		transform: translateX(-50%);
+		opacity: 1;
 	}
 	100% {
 		transform: translateX(-100%);
 		transform: rotate(0deg);
+		opacity: 0;
 	}
 }
