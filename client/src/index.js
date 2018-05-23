@@ -17,17 +17,24 @@ class App extends Component {
 		meaning: No stats will show until the user selects a fighter.
 		*/
 		this.state = {
-			selectedFighter: []
+			selectedFighter: [],
+			stats: []
 		};
 
 		this.selectFighter = this.selectFighter.bind(this);
 		this.clearState = this.clearState.bind(this);
+		this.setStats = this.setStats.bind(this);
 	}
 
 	/*
 	Shows fighter stats on user click, depending on which fighter
 	the user selected. Logs result to the browser console.
 	*/
+	setStats(stats) {
+		console.log('Setting stats', stats);
+		this.setState({stats: [...this.state.setStats]})
+	}
+
 	selectFighter(fighterId) {
 		if (this.state.selectedFighter.length < 2 && this.state.selectedFighter.lastIndexOf(fighterId)) {
 			this.setState({selectedFighter: [...this.state.selectedFighter, fighterId]})
@@ -56,15 +63,13 @@ class App extends Component {
 					<Header />
 					<Modals />
 
-					{
-						this.state.selectedFighter.map(fighterId => {
-						return <StatContainer selectedFighter={fighterId}
-								id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
+				{ this.state.selectedFighter.map(fighterId => {
+					return <StatContainer selectedFighter={fighterId} setStats={(stats) => {this.setStats(stats)}} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
 							 />
 					 	})
-					}
+				}
 
-					<FightButton buttonText="KÄBBEL!" selectedFighter={this.state.selectedFighter} />
+					<FightButton stats={this.state.stats}/>
 					<ClearStateButton clearState={this.clearState} />
 					<Logo />
 				</div>
