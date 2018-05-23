@@ -25,6 +25,13 @@ class FightButton extends Component {
 		const totalPointsFighter1 = Math.floor((fighter1Followers + fighter1Friends + fighter1StatusesCount) / 10000)
 		const totalPointsFighter2 = Math.floor((fighter2Followers + fighter2Friends + fighter2StatusesCount) / 10000)
 
+		console.log(this.props.selectedFighter[0])
+		const imgsrc1 = "../../images/" + this.props.selectedFighter[0] + ".png";
+
+		const imgsrc2 = "../../images/" + this.props.selectedFighter[1] + ".png";
+				console.log(imgsrc2)
+
+
 		if (totalPointsFighter1 > totalPointsFighter2) {
 			return (
 				<div>
@@ -34,7 +41,9 @@ class FightButton extends Component {
 						<div id="modal3" className="modal fightContentHeight">
 								<div className="modal-content fightContainer">
 									<h4 className="modalHeader">Batalj</h4>
-								<h5> Vinnaren är: {fighter1}! </h5>
+									<h5> Vinnaren är: {fighter1}! </h5>
+										<img id="imgFighter1" src={imgsrc1} />
+										<img id="imgFighter2" src={imgsrc2} />
 
 								<div className="modal-footer">
 									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>

@@ -74,23 +74,23 @@ class StatItem extends Component {
 
 				<div className="statItem"
 				title="Antal följare peronen har på Twitter.">
-				Antal följare: {this.state.followers} </div>
+				Folkstöd: {this.state.followers} </div>
 
 				<div className="statItem"
 				title="Antal vänner personen har på Twitter.">
-				Antal vänner: {this.state.friends} </div>
+				Mediestöd: {this.state.friends} </div>
 
 				<div className="statItem"
 				title="När personen skapade sitt Twitterkonto.">
-				Kontot skapades: {this.accCreationDate()} </div>
+				Twitterpolitiker sedan: {this.accCreationDate()} </div>
 
 				<div className="statItem"
 				title="Hur många statusar personen lagt upp totalt på Twitter.">
-				Antal statusar: {this.state.statusesCount} </div>
+				Försök att göra sig hörd: {this.state.statusesCount} </div>
 
 				<div className="statItem"
 				title="Räknas ut genom att dela totala antalet ord politkern använt med hur många statusar den gjort.">
-				Antal ord per tweet i genomsnitt: {Math.floor(this.averageWord())} </div>
+				Käbbelindex: {Math.floor(this.averageWord())} </div>
 
 				<div className="statItem"
 				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 10 000.">

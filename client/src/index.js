@@ -71,7 +71,7 @@ class App extends Component {
 					 	})
 				}
 
-					<FightButton stats={this.state.stats}/>
+					<FightButton stats={this.state.stats} selectedFighter={this.state.selectedFighter}/>
 					<ClearStateButton clearState={this.clearState} />
 					<Logo />
 				</div>
