@@ -66,16 +66,8 @@ class StatItem extends Component {
 		)
 	}
 
-<<<<<<< HEAD
-
-	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000);
-	// const wordCountFileReader = require("../../tweets/" + this.props.selectedFighter + ".json");
-	// const wordCount = Math.floor(wordCountFileReader.wordCount);
-
-=======
 	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
 	
->>>>>>> 07916c3f2ef6f9983481bc995da7ccba596593d5
 	return (
 			<li id="statList">
 				<div className="statItem"
