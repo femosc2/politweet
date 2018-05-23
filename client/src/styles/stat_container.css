@@ -2,9 +2,14 @@
 	text-align: center;
 	font-size: 15px;
 	margin: 0 auto;
+	margin-bottom: 5px;
 	padding: 5px;
 	animation: fadeIn 1s 1;
 	animation-fill-mode: forwards;
+}
+
+.theStatListContainer div {
+	margin-bottom: 15px;
 }
 
 #statContainer0 {
@@ -26,7 +31,7 @@
 	animation-timing-function: cubic-bezier(.54, .65, 0, 1.5);
 	animation-fill-mode: forwards;
 	color: #fff;
-	min-height: 70%;
+	min-height: 60%;
 }
 
 #statContainer1 {
@@ -48,7 +53,7 @@
 	animation-timing-function: cubic-bezier(.54, .65, 0, 1.5);
 	animation-fill-mode: forwards;
 	color: #fff;
-	min-height: 70%;
+	min-height: 60%;
 }
 
 /* Animations used */
