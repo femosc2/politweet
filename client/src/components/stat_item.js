@@ -58,7 +58,7 @@ class StatItem extends Component {
 	}
 
 	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
-
+	
 	return (
 			<li id="statList">
 				<div className="statItem"
