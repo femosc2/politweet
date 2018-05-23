@@ -1,8 +1,9 @@
 .logo1 {
-	width: 4rem;
+	width: 6.5rem;
 	box-sizing: border-box;
 	position: fixed;
-	margin-top: 3%;
+	margin-top: 2%;
+	margin-left: 2%;
 	border-radius: 50%;
 	animation: shrink 1s 1;
 	animation-fill-mode: forwards;
