@@ -1,7 +1,8 @@
 .btn-large {
 	width: 13%;
 	height: 4%;
-	background-color: rgba(89, 255, 210, 0.8);
+	background-color: #f4f142;
+	color: #4286f4;
 	/*animation: slideInBottom 2s;
 	animation-fill-mode: forwards;*/
 	z-index: 3;
