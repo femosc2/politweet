@@ -8,7 +8,7 @@ const twitter_api = "https://api.twitter.com/1.1/users/lookup.json";
 app.use(cors({origin: "*"}));
 
 app.get("/fight", (req, res) => {
-	
+
 	require("./fight.json");
 
 	res.send(body)
@@ -61,7 +61,7 @@ app.get("/fighter3", (req, res) => {
 		method: "GET",
 		url: twitter_api,
 		qs: {
-				"screen_name": "carlbildt",
+				"screen_name": "cbildt",
 				"exclude_replies": true,
 				"count": 1
 		},
