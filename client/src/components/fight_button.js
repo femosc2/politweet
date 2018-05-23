@@ -22,15 +22,13 @@ class FightButton extends Component {
 		const fighter1 = this.props.stats[0].name;
 		const fighter2 = this.props.stats[1].name;
 
-		const totalPointsFighter1 = Math.floor((fighter1Followers + fighter1Friends + fighter1StatusesCount) / 10000)
-		const totalPointsFighter2 = Math.floor((fighter2Followers + fighter2Friends + fighter2StatusesCount) / 10000)
+		const totalPointsFighter1 = Math.floor(((fighter1Followers + fighter1Friends + fighter1StatusesCount) / 10000) + Math.floor(Math.random() * 10) + 1);
+		console.log(totalPointsFighter1);
+		const totalPointsFighter2 = Math.floor(((fighter2Followers + fighter2Friends + fighter2StatusesCount) / 10000) + Math.floor(Math.random() * 10) + 1);
+		console.log(totalPointsFighter2);
 
-		console.log(this.props.selectedFighter[0])
 		const imgsrc1 = "../../images/" + this.props.selectedFighter[0] + ".png";
-
 		const imgsrc2 = "../../images/" + this.props.selectedFighter[1] + ".png";
-				console.log(imgsrc2)
-
 
 		if (totalPointsFighter1 > totalPointsFighter2) {
 			return (
