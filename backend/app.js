@@ -7,6 +7,15 @@ const twitter_api = "https://api.twitter.com/1.1/users/lookup.json";
 
 app.use(cors({origin: "*"}));
 
+app.get("/fight", (req, res) => {
+	
+	require("./fight.json");
+
+	res.send(body)
+
+});
+
+
 app.get("/fighter1", (req, res) => {
 	const apiCall = {
 		method: "GET",
