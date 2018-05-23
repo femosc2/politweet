@@ -7,9 +7,9 @@ class FightButton extends Component {
 		if (this.props.stats.length < 2) {
 			return (
 				<div id="hiddenLoading">Laddar</div>
-			) 
+			)
 		}
-		
+
 		const fighter1 = this.props.stats[0].followers;
 		const fighter2 = this.props.stats[1].followers;
 
@@ -20,7 +20,7 @@ class FightButton extends Component {
 			<div>
 				<ul className="modalButton" id="show-modal-ul">
 					<ul id="nav-mobile" className="">
-						<a className="btn-large modal-trigger" href="#modal3" id="show-modal3"> KÄBBEL </a>
+						<a className="btn-large pulse modal-trigger" href="#modal3" id="show-modal3"> KÄBBEL </a>
 					<div id="modal3" className="modal fightContentHeight">
 							<div className="modal-content fightContainer">
 								<h4 className="modalHeader">Batalj</h4>
