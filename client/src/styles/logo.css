@@ -1,9 +1,9 @@
 .logo1 {
-	width: 6.5rem;
+	width: 5rem;
 	box-sizing: border-box;
 	position: fixed;
-	margin-top: .5%;
-	margin-left: .5%;
+	margin-top: 1%;
+	margin-left: 1%;
 	border-radius: 40%;
 	animation: shrink 1s 1;
 	animation-fill-mode: forwards;
@@ -19,13 +19,13 @@
 		transform: scale(1.0);
 	}
 	100% {
-		transform: scale(1.5);
+		transform: scale(1.2);
 	}
 }
 
 @keyframes shrink {
 	0% {
-		transform: scale(1.5);
+		transform: scale(1.2);
 	}
 	100% {
 		transform: scale(1.0);
