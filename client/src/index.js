@@ -66,12 +66,10 @@ class App extends Component {
 					<Modals />
 
 				{ this.state.selectedFighter.map((fighterId, i) => {
-					return
-						<StatContainer selectedFighter={fighterId}
-							key={i} setStats={(stats) => {this.setStats(stats)}}
-							id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
-					 	/>
-				 	});
+					return <StatContainer selectedFighter={fighterId}
+						key={i} setStats={(stats) => {this.setStats(stats)}} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
+							 />
+					 	})
 				}
 
 					<FightButton stats={this.state.stats} selectedFighter={this.state.selectedFighter}/>
