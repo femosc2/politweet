@@ -68,11 +68,15 @@ Wait until the terminal tells you that the script is finished!
 
 ### 6.
 
+Create a config.js file in backend, contact hej@politweet.se for a API key.
+
+### 7.
+
 Navigate back to the client folder and run the application by starting a local server with the following command:
 
 ```bash npm start```
 
-### 5.
+### 8.
 
 The server should start on localhost:3000 automatically, if it doesn't, you can navigate to it manually in your webbrowser.
 
