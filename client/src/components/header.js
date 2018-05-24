@@ -8,7 +8,6 @@ class Header extends Component {
 				<img className="headerImage" src="/images/header_test.png" alt="Splashimage" />
 				<div className="headerH1">
 					<h1>Politweet</h1>
-
 				</div>
 
 				<div className="headerH2">

@@ -5,12 +5,12 @@ import "../styles/stat_container.css";
 // Renders a div containing the StatItems
 class StatContainer extends Component {
 	render() {
-	return (
-			<div className="theStatListContainer" id={this.props.id}>
-				<ul>
-					<StatItem selectedFighter={this.props.selectedFighter} setStats={(stats) => {this.props.setStats(stats)}}/>
-				</ul>
-			</div>
+		return (
+				<div className="theStatListContainer" id={this.props.id}>
+					<ul>
+						<StatItem selectedFighter={this.props.selectedFighter} setStats={(stats) => {this.props.setStats(stats)}}/>
+					</ul>
+				</div>
 		);
 	}
 }

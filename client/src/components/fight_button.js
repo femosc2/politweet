@@ -3,11 +3,10 @@ import "../styles/fight_button.css";
 
 class FightButton extends Component {
 	render() {
-		console.log(this.props);
 		if (this.props.stats.length < 2) {
 			return (
-				<div id="hiddenLoading">Laddar</div>
-			)
+				<div id="hiddenLoading"> Laddar </div>
+			);
 		}
 
 		const fighter1Followers = this.props.stats[0].followers;
@@ -51,55 +50,65 @@ class FightButton extends Component {
 					</ul>
 				</div>
 			);
+		}
+ 		else if (totalPointsFighter1 === totalPointsFighter2) {
+				return (
+					<div>
+						<ul className="modalButton" id="show-modal-ul">
+							<ul id="nav-mobile" className="">
+								<a className="btn-large pulse modal-trigger"
+									href="#modal3" id="show-modal3"> KÄBBEL </a>
 
-		} else if (totalPointsFighter1 === totalPointsFighter2) {
-			return (
-				<div>
-					<ul className="modalButton" id="show-modal-ul">
-						<ul id="nav-mobile" className="">
-							<a className="btn-large pulse modal-trigger" href="#modal3" id="show-modal3"> KÄBBEL </a>
-						<div id="modal3" className="modal fightContentHeight">
+							<div id="modal3" className="modal fightContentHeight">
 								<div className="modal-content fightContainer">
-									<h3 className="modalHeader">Batalj</h3>
-								<h4 id="fadeIn"> Bara käbbel! Det blev lika mellan {fighter1} och {fighter2}! </h4>
-								<img id="imgFighter1" src={imgsrc1} />
-								<img id="imgFighter2" src={imgsrc2} />
-								<img id="imgWinner" src="images/politweet.png" />
-								<div className="modal-footer">
-									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
+									<h3 className="modalHeader"> Batalj </h3>
+									<h4 id="fadeIn"> Bara käbbel!
+										Det blev lika mellan {fighter1} och {fighter2}! </h4>
+
+										<img id="imgFighter1" src={imgsrc1} />
+										<img id="imgFighter2" src={imgsrc2} />
+										<img id="imgWinner" src="images/politweet.png" />
+
+										<div className="modal-footer">
+											<a href="#!" className="modal-action modal-close
+												waves-effect waves-green btn-flat"> Stäng </a>
+									</div>
 								</div>
 							</div>
-							</div>
+							</ul>
 						</ul>
-					</ul>
-				</div>
-			);
-
-		} else {
+					</div>
+				);
+		}
+		else {
 			return (
 				<div>
 					<ul className="modalButton" id="show-modal-ul">
 						<ul id="nav-mobile" className="">
-							<a className="btn-large pulse modal-trigger" href="#modal3" id="show-modal3"> KÄBBEL </a>
-						<div id="modal3" className="modal fightContentHeight">
+							<a className="btn-large pulse modal-trigger"
+								href="#modal3" id="show-modal3"> KÄBBEL </a>
+
+							<div id="modal3" className="modal fightContentHeight">
 								<div className="modal-content fightContainer">
-									<h3 className="modalHeader">Batalj</h3>
-								<h4 id="fadeIn"> Vinnaren är: {fighter2}! </h4>
-								<img id="imgFighter1" src={imgsrc1} />
-								<img id="imgFighter2" src={imgsrc2} />
-								<img id="imgWinner" src="images/politweet.png" />
+									<h3 className="modalHeader"> Batalj </h3>
+									<h4 id="fadeIn"> Vinnaren är: {fighter2}! </h4>
+
+									<img id="imgFighter1" src={imgsrc1} />
+									<img id="imgFighter2" src={imgsrc2} />
+									<img id="imgWinner" src="images/politweet.png" />
+
 								<div className="modal-footer">
 									<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 								</div>
-							</div>
+
+								</div>
 							</div>
 						</ul>
 					</ul>
 				</div>
 			);
 		};
-
-		}
 	}
+}
 
 export default FightButton;

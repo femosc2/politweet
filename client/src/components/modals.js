@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import "../styles/modals.css";
 
-/*
-Boilerplate with static data for the leaderboard- and about buttons.
-Will be changed later with real functionality.
-*/
-
+// Boilerplate with static data for the leaderboard- and about buttons.
 class Modals extends Component {
 	render() {
 		return (
@@ -15,27 +11,28 @@ class Modals extends Component {
 						<a className="waves-effect waves-light btn modal-trigger" href="#modal1">OM POLITWEET</a>
 					<div id="modal1" className="modal about">
 							<div className="modal-content">
-							<h5 className="modalHeader">Skaparna av Politweet</h5>
-						<p className="modalP">Ett gäng goa grabbar som studerar Informationsarkitektur på Malmö Universitet.
-							Vi är: Adam Hermansson, Adam Nilsson, Felix Morau, John Iversen och Victor Persson.</p>
+								<h5 className="modalHeader">Skaparna av Politweet</h5>
+								<p className="modalP">Ett gäng goa grabbar som studerar Informationsarkitektur på Malmö Universitet.
+								Vi är: Adam Hermansson, Adam Nilsson, Felix Morau, John Iversen och Victor Persson.</p>
 
-							<h5 className="modalHeader">Politweets syfte</h5>
-						<p className="modalP">Syftet med Politweet är för gruppen att lära sig JavaScript och React.
-							Det är även det första systemutvecklingsprojekt gruppen varit del av och agerar alltså även
-							som ett lärandetillfälle för detta.</p>
+								<h5 className="modalHeader">Politweets syfte</h5>
+								<p className="modalP">Syftet med Politweet är för gruppen att lära sig JavaScript och React.
+								Det är även det första systemutvecklingsprojekt gruppen varit del av och agerar alltså även
+								som ett lärandetillfälle för detta.</p>
 								<p className="modalP">Varning - det här har inget att göra med verkligheten och är bara på skoj.
-									Låt INTE denna hemsida påverka dina framtida politiska val.</p>
+								Låt INTE denna hemsida påverka dina framtida politiska val.</p>
 
-							<h5 className="modalHeader">Användning av hemsidan</h5>
-						<p className="modalP">För att använda hemsidan, klicka på två personer vars twitter-stats du vill jämföra.
-							Klicka sedan på Käbbel-knappen. Om du ångrar dig och vill välja andra personer att jämföra, klicka på Återställ-knappen.</p>
+								<h5 className="modalHeader">Användning av hemsidan</h5>
+								<p className="modalP">För att använda hemsidan, klicka på två personer vars twitter-stats du vill jämföra.
+								Klicka sedan på Käbbel-knappen. Om du ångrar dig och vill välja andra personer att jämföra, klicka på Återställ-knappen.</p>
 								<p className="modalP">För att stänga ner en modal (som den här!) klicka på det mörka området eller klicka på stäng knappen.</p>
 
-							<h5 className="modalHeader">Annan information</h5>
+								<h5 className="modalHeader">Annan information</h5>
 								<p className="modalP">Personernas "styrkepoäng" räknas ut genom att lägga ihop antal följare, vänner och hur många statusar individen gjort.
-									Sedan delas detta med 10 000 för att få ett mer lättbegripligt nummer att titta på.</p>
+								Sedan delas detta med 10 000 för att få ett mer lättbegripligt nummer att titta på.</p>
 								<p className="modalP">All kod i projektet går att hitta på http://www.github.com/femosc2/politweet</p>
 							</div>
+
 							<div className="modal-footer">
 								<a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Stäng</a>
 							</div>

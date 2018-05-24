@@ -22,5 +22,4 @@ class RosterProfile extends Component {
 	}
 }
 
-
 export default RosterProfile;

@@ -24,7 +24,7 @@ class App extends Component {
 		this.selectFighter = this.selectFighter.bind(this);
 		this.clearState = this.clearState.bind(this);
 		this.setStats = this.setStats.bind(this);
-	}
+		}
 
 	/*
 	Shows fighter stats on user click, depending on which fighter
@@ -51,10 +51,10 @@ class App extends Component {
 	clearState() {
 			this.setState({
 				selectedFighter: []
-			})
+			});
 			this.setState({
 				stats: []
-			})
+			});
 	}
 
 	// Renders the different components imported above and returns them to ReactDOM below.
@@ -66,9 +66,12 @@ class App extends Component {
 					<Modals />
 
 				{ this.state.selectedFighter.map((fighterId, i) => {
-					return <StatContainer selectedFighter={fighterId} key={i} setStats={(stats) => {this.setStats(stats)}} id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
-							 />
-					 	})
+					return
+						<StatContainer selectedFighter={fighterId}
+							key={i} setStats={(stats) => {this.setStats(stats)}}
+							id={"statContainer" + this.state.selectedFighter.indexOf(fighterId).toString()}
+					 	/>
+				 	});
 				}
 
 					<FightButton stats={this.state.stats} selectedFighter={this.state.selectedFighter}/>

@@ -50,25 +50,25 @@ class StatItem extends Component {
 	}
 
 	accCreationDate() {
-			const accCreation = String(this.state.accCreation);
-			const accCreationYear = (accCreation.substring(accCreation.length - 4));
-			return accCreationYear;
+		const accCreation = String(this.state.accCreation);
+		const accCreationYear = (accCreation.substring(accCreation.length - 4));
+		return accCreationYear;
 	}
 
 	render() {
-	if (this.props.selectedFighter === null) {
+		if (this.props.selectedFighter === null) {
+			return (
+				<div id="hiddenLoading">Laddar</div>
+			)
+		}
+
+		const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
+
 		return (
-			<div id="hiddenLoading">Laddar</div>
-		)
-	}
-
-	const totalPoints = Math.floor((this.state.followers + this.state.friends + this.state.statusesCount) / 10000)
-
-	return (
 			<li id="statList">
 
 				<div className="statItem"
-				title="Personens namn på Twitter."><h4>{this.state.name}</h4></div>
+				title="Personens namn på Twitter."><h4> {this.state.name} </h4></div>
 				<br></br>
 
 				<div className="statItem"
@@ -92,7 +92,7 @@ class StatItem extends Component {
 
 				<div className="statItem"
 				title="Räknas ut genom att dela totala antalet ord politkern använt med hur många statusar den gjort.">
-				<strong> Käbbel-index:</strong>  {Math.floor(this.averageWord())} </div>
+				<strong> Käbbel-index:</strong> {Math.floor(this.averageWord())} </div>
 
 				<div className="statItem"
 				title="Räknas ut genom att lägga ihop antal följare, vänner och hur många statusar invidiven gjort och sedan delas detta med 10 000.">
