@@ -64,7 +64,7 @@ class FightButton extends Component {
 
 							<div id="modal3" className="modal">
 								<div className="modal-content fightContainer">
-									<h4 className="modalHeader">Batalj</h4>
+									<h4 className="modalHeader"> Batalj </h4>
 									<h5> Bara käbbel! Det blev lika mellan
 										{fighter1} och {fighter2}! </h5>
 
@@ -93,7 +93,7 @@ class FightButton extends Component {
 
 							<div id="modal3" className="modal">
 								<div className="modal-content fightContainer">
-									<h4 className="modalHeader">Batalj</h4>
+									<h4 className="modalHeader"> Batalj </h4>
 									<h4> Vinnaren är: {fighter2}! </h4>
 
 									<img id="imgFighter1" src={imgsrc1} alt="Bild på kämpe 1" />
