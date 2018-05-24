@@ -22,7 +22,6 @@ ul {
 }
 
 /* Animations used */
-
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
